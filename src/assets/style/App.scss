@@ -1,4 +1,15 @@
 @import './font.scss';
 @import './variable.scss';
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/slick-carousel/slick/slick.scss';
+@import 'node_modules/slick-carousel/slick/slick-theme.scss';
 
+.bg-home {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#abd9f2+0,64c2f4+44,20a7f5+100 */
+background: #abd9f2; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #abd9f2 0%, #64c2f4 44%, #20a7f5 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #abd9f2 0%,#64c2f4 44%,#20a7f5 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #abd9f2 0%,#64c2f4 44%,#20a7f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abd9f2', endColorstr='#20a7f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
