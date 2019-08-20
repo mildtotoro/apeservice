@@ -23,7 +23,8 @@ export default class Client extends Component {
       speed: 500,
       rows: 1,
       slidesPerRow: 2,
-      autoplay: true
+      autoplay: true,
+      arrows: false,
       // slidesToScroll: 1
     };
     return (

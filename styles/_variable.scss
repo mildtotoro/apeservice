@@ -1,10 +1,10 @@
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-base: "prompt", $font-family-sans-serif !default;
 
-$primary: #20a7f5;
+$primary: #033f6a;
 $secondary: #4faf08;
+$info: #0289e9;
 // $success:       $green !default;
 // $info:          $cyan !default;
 // $warning:       $yellow !default;
@@ -18,6 +18,15 @@ $dark: rgb(62, 63, 66);
 // $h4-font-size:                $font-size-base * 1.5 !default;
 // $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size: 13px;
+
+// Links
+//
+// Style anchor elements.
+
+// $link-color:                              theme-color("primary") !default;
+$link-decoration: none !default;
+// $link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: none !default;
 
 // slick
 $slick-font-path: "../assets/slick/fonts/" !default;
