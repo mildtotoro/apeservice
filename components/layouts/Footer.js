@@ -24,7 +24,7 @@ export default class Footer extends React.Component {
                 ราคาปลีก-ส่ง
                 </p>
               <p>
-                พื้นที่ให้บริการ กรุงเทพ และปริมนฑน กาญจนบุรี
+                พื้นที่ให้บริการ กรุงเทพ ปริมณฑน และจังหวัดกาญจนบุรี
                 ให้บริการและติดติ้งโดยผู้ชำนาญการ ประสบการณ์มากกว่า 23 ปี
                 ล้างแอร์บ้าน มาตรฐาน สะอาดชัวร์ บริการตรวจเช็ค ซ่อม ย้าย
                 ล้างแอร์บ้าน ทุกชนิด แอร์ไม่เย็น แอร์น้ำหยด แอร์รั่ว
@@ -32,68 +32,16 @@ export default class Footer extends React.Component {
                 </p>
             </div>
             <div className="col-12 col-md-6 col-lg-3">
-              <h5>สินค้าเครื่องปรับอากาศ</h5>
+              <h5>แคตตาล็อกเครื่องปรับอากาศ</h5>
               <ul style={{ listStyleType: "none" }} className="pl-1">
                 <li>
                   <a className="text-light" href="#f">แอร์ Amena</a>
                 </li>
-
                 <li>
                   <a className="text-light" href="#f">แอร์ Amena</a>
                 </li>
                 <li>
                   <a className="text-light" href="#f">แอร์ Carrier</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Central Air</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Casper</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Daikin</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Eminent</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Fujitsu</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Gree</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Haier</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ LG</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Mitsubishi Electric</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Mitsubishi HeavyDuty</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Panasonic</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Sharp</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Samsung</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Star Aire</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Trane</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Toshiba</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ TCL</a>
                 </li>
               </ul>
             </div>
@@ -119,7 +67,6 @@ export default class Footer extends React.Component {
                 111 Lasalle 28, Sukumvit 105 Rd, Bangna, Bangna, Bangkok 10260
                 Tel 02-749-1230-2 AUTO, 081-889-6696
                 </p>
-
             </div>
           </div>
         </div>

@@ -6,8 +6,7 @@ $primary: #033f6a;
 $secondary: #4faf08;
 $info: #0289e9;
 // $success:       $green !default;
-// $info:          $cyan !default;
-// $warning:       $yellow !default;
+$warning: #fd7e14;
 // $danger:        $red !default;
 // $light:         $gray-100 !default;
 $dark: rgb(62, 63, 66);
@@ -19,6 +18,7 @@ $dark: rgb(62, 63, 66);
 // $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size: 13px;
 
+$border-radius: 0px;
 // Links
 //
 // Style anchor elements.

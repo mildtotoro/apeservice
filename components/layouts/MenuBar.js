@@ -10,6 +10,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { faFacebookMessenger } from "@fortawesome/free-brands-svg-icons";
+import Link from 'next/link';
 
 import logo from "../../assets/images/ape-service-logo.png";
 
@@ -50,7 +51,10 @@ export default class MenuBar extends React.Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-              <Nav.Link href="#home">หน้าหลัก</Nav.Link>
+              <Link href="/">
+                <a className="nav-link">หน้าหลัก</a>
+              </Link>
+
               <Nav.Link href="#link">บริการ</Nav.Link>
               <Nav.Link
                 target="_blank"
@@ -58,8 +62,9 @@ export default class MenuBar extends React.Component {
               >
                 คำนวน BTU
               </Nav.Link>
-
-              <Nav.Link href="#product">สินค้า</Nav.Link>
+              <Link href="/products">
+                <a className="nav-link">สินค้า</a>
+              </Link>
               <Nav.Link href="#showcase">ตัวอย่างผลงาน</Nav.Link>
               <Nav.Link href="#aboutus">เกี่ยวกับเรา</Nav.Link>
               <Nav.Link href="#contactus">ติดต่อเรา</Nav.Link>

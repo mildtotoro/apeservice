@@ -1,7 +1,6 @@
 import React from "react";
-import "../styles/app.scss";
+// import "../styles/app.scss";
 import Layout from "../components/layouts/Layout";
-import Footer from "../components/layouts/Footer";
 import Slider from "../components/home/slider";
 import Client from "../components/home/Client";
 import { Container, Row, Col } from "react-bootstrap";
@@ -22,11 +21,10 @@ function Home() {
           <Row>
             <Col lg="10" className="mx-auto text-center py-5">
               <h2>บริษัท เอ พี อี เซอร์วิส จำกัด</h2>
-
               <p>
                 จากประสบการณ์ในงานระบบปรับอากาศ ระบบระบายอากาศกว่า 23ปี
                 บริษัทฯมีความเชี่ยวชาญด้านแอร์บ้านและแอร์เชิงพาณิชย์
-                เพื่อรองรับกับการพัฒนาประสิทธิภาพ ของงานระบบ , การประหยัดพลังงาน
+                เพื่อรองรับกับการพัฒนาประสิทธิภาพ ของงานระบบ, การประหยัดพลังงาน
                 และ อนุรักษ์ทรัพยากรสิ่งแวดล้อม
               </p>
             </Col>
@@ -79,17 +77,23 @@ function Home() {
             </Col>
           </Row>
         </Container>
-        {/* <div className="bg-home py-5 my-5">
-          <Row className="justify-content-center">
-
-          </Row>
-          show case
-        </div> */}
+        <div className="bg-home py-5 my-5">
+          <Container>
+            <Row className="">
+              <Col xs="12">
+                <h2 className="pb-4">แคตตาล็อกสินค้า</h2>
+              </Col>
+            </Row>
+          </Container>
+        </div>
         <div className="py-5">
           <Container>
             <Row>
               <Col>
                 <h2 className="pb-4">บริการและการซ่อมบำรุง</h2>
+              </Col>
+              <Col>
+                <h2 className="pb-4 d-none d-lg-block">บทความ</h2>
               </Col>
             </Row>
             <Row className="justify-content-center mb-4">
@@ -111,11 +115,19 @@ function Home() {
 
               </Col>
               {/* <div className="w-100"></div> */}
+              <Col className="d-lg-none d-flex">
+                <Row className="justify-content-left mr-auto pt-4">
+                  <Col>
+                    <div className="mr-auto ">
+                      <h2 className="pb-4">บทความ</h2>
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
               <Col lg="6">
                 <Row>
                   <Col lg="5">
                     <img className="img-fluid border p-3 mb-4" src={article1} alt="ape service" />
-
                   </Col>
                   <Col lg="7">
                     <a className="text-dark font-weight-light" href="#r"><span className="h5">&bull; </span>การเลือกขนาดของเครื่องปรับอากาศให้เหมาะสมกับพื้นที่ใช้งาน</a><br />
@@ -125,8 +137,6 @@ function Home() {
                     <a className="text-dark font-weight-light" href="#e"><span className="h5">&bull; </span>ความรู้เบื้องต้นเกี่ยวกับเครื่องปรับอากาศ</a>
                   </Col>
                 </Row>
-
-
               </Col>
             </Row>
           </Container>
@@ -140,7 +150,6 @@ function Home() {
             </Col>
           </Row>
         </Container>
-        <Footer></Footer>
 
       </Layout>
     </div>
