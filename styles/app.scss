@@ -26,12 +26,68 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abd9f2', endColorstr='#20a7f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.page-product {
+  .btn-list {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgb(166, 166, 166);
+    border-radius: 2px;
+    position: relative;
+    .item {
+      height: 6px;
+      width: 20px;
+      margin: 3px auto 0;
+      border: 1px solid rgb(166, 166, 166);
+    }
+  }
+  .btn-card {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgb(166, 166, 166);
+    border-radius: 2px;
+    position: relative;
+    .square {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border: 1px solid rgb(166, 166, 166);
+      border-radius: 2px;
+    }
+    .square-1,
+    .square-2 {
+      top: 3px;
+    }
+    .square-3,
+    .square-4 {
+      bottom: 3px;
+    }
+    .square-1,
+    .square-3 {
+      left: 3px;
+    }
+    .square-2,
+    .square-4 {
+      right: 3px;
+    }
+  }
+}
+
 .product {
   .badge,
   .brand {
     position: absolute;
   }
+  .badge {
+    top: 10px;
+  }
+  .brand {
+    top: 10px;
+    right: 0;
+  }
 
+  .btu {
+    font-size: 16px;
+  }
   .old-price {
     color: #3e3f42b0;
     text-decoration: line-through;
