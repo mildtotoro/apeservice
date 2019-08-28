@@ -1,4 +1,4 @@
-export const products = [
+export default [
   {
     brand: 'daikin',
     name: 'Super Smile Inverter II (FTKC - TV2S)',
@@ -45,7 +45,7 @@ export const products = [
     price: '',
     'old-price': '',
     catalogLink: 'https://www.daikin.co.th/wp-content/uploads/2018/03/Super-Smart-2018_Catalog.pdf',
-    imageName: 'daikin-4.jng'
+    imageName: 'daikin-4.jpg'
   },
   // {
   //   brand: 'daikin',
