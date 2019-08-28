@@ -8,6 +8,9 @@ import { faTh } from "@fortawesome/free-solid-svg-icons";
 import { faThList } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookMessenger } from "@fortawesome/free-brands-svg-icons";
+import productDaikin from '../assets/product/daikin.js';
+
+
 export default function products() {
   return (
     <Layout>
@@ -74,7 +77,7 @@ export default function products() {
                 <div className="product border">
                   <div className="row">
                     <div className="col-12 col-sm-6 d-flex position-relative">
-                      <span className="badge badge-secondary">New</span>
+                      <span className="badge badge-secondary position-absolute">New</span>
                       <div className="brand"><img src={samsung} alt="" /></div>
                       <img className="img-fluid align-self-center" src={product1} alt="" />
                       <span className="btn-catalog text-dark">
@@ -84,7 +87,9 @@ export default function products() {
                     <div className="col-12 col-sm-6">
                       <div className="p-2 p-lg-4">
                         <h4 className="name mb-0">GEMINI 42TEVGB</h4>
-                        <div className="btu pb-2">25,100 BTU/H</div>
+                        <div className="btu pb-2">
+                          <span className="badge badge-light">25,100 BTU/H</span>
+                        </div>
                         <div className="price pt-2">
                           ฿ 10,500
                         <span className="old-price pl-3 pt-2 h6">฿ 11,500</span>

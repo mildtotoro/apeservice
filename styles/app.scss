@@ -1,11 +1,10 @@
 @import "./font.scss";
 @import "./_variable.scss";
 @import "node_modules/bootstrap/scss/bootstrap.scss";
-
 @import "node_modules/slick-carousel/slick/slick-theme.scss";
-
 @import "node_modules/slick-carousel/slick/slick.scss";
 @import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
 .bg-home {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#abd9f2+0,64c2f4+44,20a7f5+100 */
   background: #abd9f2; /* Old browsers */
@@ -73,7 +72,7 @@
 }
 
 .product {
-  .badge,
+  // .badge,
   .brand {
     position: absolute;
   }
