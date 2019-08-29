@@ -86,6 +86,12 @@
 
   .btu {
     font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    // left: 50%;
+    width: 100%;
+    text-align: center;
+    // transform: translateX(-50%);
   }
   .old-price {
     color: #3e3f42b0;
@@ -97,12 +103,12 @@
 
   .btn-catalog {
     border: 1px solid $warning;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
     border-radius: 2px;
     font-size: 12px;
     padding: 2px 5px;
+  }
+  .description {
+    max-height: 180px;
+    overflow-y: scroll;
   }
 }

@@ -47,41 +47,40 @@ export default [
     catalogLink: 'https://www.daikin.co.th/wp-content/uploads/2018/03/Super-Smart-2018_Catalog.pdf',
     imageName: 'daikin-4.jpg'
   },
-  // {
-  //   brand: 'daikin',
-  //   name: '',
-  //   description: '',
-  //   btu: [
-
-  //   ],
-  //   price: '',
-  //   'old-price': '',
-  //   catalogLink: '',
-  //   imageName: ''
-  // },
-  // {
-  //   brand: 'daikin',
-  //   name: '',
-  //   description: '',
-  //   btu: [
-
-  //   ],
-  //   price: '',
-  //   'old-price': '',
-  //   catalogLink: '',
-  //   imageName: ''
-  // },
-  // {
-  //   brand: 'daikin',
-  //   name: '',
-  //   description: '',
-  //   btu: [
-
-  //   ],
-  //   price: '',
-  //   'old-price': '',
-  //   catalogLink: '',
-  //   imageName: ''
-  // }
-
+  {
+    brand: 'daikin',
+    name: 'Smart Inverter (FTKM-NV2S)',
+    description: 'SMART เป็นนวัตกรรมเครื่องปรับอากาศของไดกิ้นซึ่งรวมการประหยัดพลังงานและประสิทธิภาพการทำความเย็นไว้ด้วยกัน ด้วยค่า SEER ที่สูงถึง 23.76 (ในรุ่น FTKM09NV2S) ซึ่งเป็นผลมาจากการใช้สารทำความเย็นประสิทธิภาพสูง R32 และอินเวอร์เตอร์คอมเพรสเซอร์แบบสวิง ช่วยลดค่าไฟแต่ยังคงให้ความเย็นอย่างเต็มประสิทธิภาพ พร้อมฟังก์ชั่นอำนวยความสะดวกต่างๆ เช่น ระบบตาอัจฉริยะ การกระจายลมแบบสามมิติ และระบบควบคุมอุณหภูมิขณะหลับ',
+    btu: [
+      '29,000'
+    ],
+    price: '',
+    'old-price': '',
+    catalogLink: 'https://www.daikin.co.th/wp-content/uploads/2015/09/Smart-Catalog.pdf',
+    imageName: 'daikin-5.jpg'
+  },
+  {
+    brand: 'daikin',
+    name: 'Smooth II (ATM-NV2S)',
+    description: 'เครื่องปรับอากาศ SMOOTH II ให้ประสิทธิภาพการทำความเย็นสูงด้วยสารทำความเย็นเจเรอเรชั่นใหม่ R32 ดีไซน์ใหม่ ประหยัดพลังงาน ช่วยลดการเกิดภาวะเรือนกระจก เย็นทั่วถึงด้วยระบบกระจายลมเย็นสามมิติ และปกป้องคุณด้วยฟิลเตอร์ Titanium apatite deodorizing filter ยับยั้งเชื้อไวรัส แบคทีเรีย และกลิ่นรบกวน',
+    btu: [
+      '9,200', '13,000', '18,090', '22,530'
+    ],
+    price: '',
+    'old-price': '',
+    catalogLink: 'https://www.daikin.co.th/wp-content/uploads/2017/03/NEW_SmoothII_2017_catalog.pdf',
+    imageName: 'daikin-6.jpg'
+  },
+  {
+    brand: 'daikin',
+    name: 'Smash II (FTM-PV2S)',
+    description: 'เครื่องปรับอากาศ SMASH II ให้ประสิทธิภาพการทำความเย็นสูงด้วยสารทำความเย็นเจเรอเรชั่นใหม่ R32 ดีไซน์ใหม่ ประหยัดพลังงาน ช่วยลดการเกิดภาวะเรือนกระจก พร้อมโหมดเย็นเร็ว และปกป้องคุณด้วย Titanium apatite deodorizing filter ยับยั้งเชื้อไวรัส แบคทีเรีย และกลิ่นรบกวน',
+    btu: [
+      '9,200', '13,000', '14,400', '18,090', '22,530', '24,500'
+    ],
+    price: '',
+    'old-price': '',
+    catalogLink: 'https://www.daikin.co.th/wp-content/uploads/2017/03/New_SmashII2017_catalog.pdf',
+    imageName: 'daikin-7.jpg'
+  },
 ]

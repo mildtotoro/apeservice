@@ -1,4 +1,4 @@
-export const products = [
+export default [
   {
     brand: 'uni-aire',
     name: 'WRI-ARI',
