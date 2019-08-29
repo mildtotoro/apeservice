@@ -15,7 +15,8 @@ class Products extends React.Component {
   constructor() {
     super();
     this.state = {
-      products: []
+      products: [],
+      showProducts: [],
     }
   }
 
@@ -24,12 +25,38 @@ class Products extends React.Component {
       products: [
         ...productDaikin,
         ...productUniaire
+      ],
+      showProducts: [
+        ...productDaikin,
+        ...productUniaire
       ]
     });
   }
 
+  filterByBrand = (brand) => {
+    // todo: when click same btn mean see all product
+    this.setState((state) => {
+      const showProducts = state.products.filter((product) => {
+        return product.brand === brand
+      })
+      return {
+        ...state,
+        showProducts
+      }
+    })
+  }
+
+  filterByBtu = (e) => {
+    console.log(e.target.value)
+  }
+
+  filterByPrice = () => {
+
+  }
+
   render() {
-    const { products } = this.state;
+    const { showProducts } = this.state;
+    console.log({ showProducts })
     return (
       <Layout>
         <Container className="page-product">
@@ -46,9 +73,9 @@ class Products extends React.Component {
                 <div className="d-flex flex-row">
                   <div className="p-2">ยี่ห้อ</div>
                   <div className="p-2">
-                    <button className="btn btn-outline-primary btn-sm">Aamena</button>
-                    <button className="btn btn-outline-primary btn-sm mx-2">Daikin</button>
-                    <button className="btn btn-outline-primary btn-sm">To</button>
+                    <button onClick={() => { this.filterByBrand('carrier') }} className="btn btn-outline-primary btn-sm">Carrier</button>
+                    <button onClick={() => { this.filterByBrand('daikin') }} className="btn btn-outline-primary btn-sm mx-2">Daikin</button>
+                    <button onClick={() => { this.filterByBrand('uni-aire') }} className="btn btn-outline-primary btn-sm">Uni-aire</button>
                   </div>
                   <div className="p-2">
                     เรียงโดย
@@ -64,13 +91,13 @@ class Products extends React.Component {
                     BTU
                   </div>
                   <div className="p-2">
-                    <select name="" defaultValue="all" id="" className="d-inline-block form-control-sm">
+                    <select name="" onChange={this.filterByBtu} defaultValue="all" id="" className="d-inline-block form-control-sm">
                       <option value="all">All</option>
-                      <option value="9,000">9,000</option>
-                      <option value="12,000">12,000</option>
-                      <option value="18,000">18,000</option>
-                      <option value="24,000 ">24,000 </option>
-                      <option value="30,000 ">30,000 </option>
+                      <option value={9000}>9,000 - 11,999</option>
+                      <option value={12000}>12,000 - 17,999</option>
+                      <option value={18000}>18,000 - 23,999</option>
+                      <option value={24000}>24,000 - 29,999</option>
+                      <option value={30000}>มากกว่า 30,000</option>
                     </select>
                   </div>
 
@@ -85,18 +112,17 @@ class Products extends React.Component {
                       <div className="item item-1"></div>
                       <div className="item item-2"></div>
                       <div className="item item-3"></div>
-                      {/* <div className="item item-4"></div> */}
                     </div>
                   </div>
                 </div>
               </div>
               <div className="row">
                 {/* <div className="col-12 col-lg-6"> */}
-                {products.map((product) => {
+                {showProducts.map((product) => {
                   return (
-                    <div key={product.name} className="col-12 col-lg-6">
+                    <div key={product.name} className="col-12 col-lg-6 mt-4">
                       <div className="product border">
-                        <div className="row no-gutters">
+                        <div className="row no-gutters h-100">
                           <div className="col-12 col-sm-6 d-flex position-relative">
                             {/* <span className="badge badge-secondary position-absolute">New</span> */}
                             <div className="brand"><img src={samsung} alt="" /></div>
@@ -116,13 +142,14 @@ class Products extends React.Component {
                                   return <span key={product.name + item} className="badge badge-light font-weight-light border mr-1">{item} BTU/H</span>
                                 })}
                               </div> */}
-                              <div className="price pt-2">
+                              <div className={(product.price === '') ? 'd-none' : 'price pt-2'} >
                                 ฿ {product.price}
-                                <span className="old-price pl-3 pt-2 h6">฿ {product["old-price"]}</span>
+                                <span className={(product['old-price'] === '') ? 'd-none' : 'old-price pl-3 pt-2 h6'}>฿ {product["old-price"]}</span>
                               </div>
                               <p className="h6 pt-2 description">
                                 {product.description}
                               </p>
+                              {/* <button className="btn btn-link">more</button> */}
                               <div className="">
                                 <FontAwesomeIcon className="h5 mb-0 pr-2" icon={faFacebookMessenger} />
                                 <a href="#f" className="text-primary btn btn-link">สอบถาม/สั่งซื้อสินค้า </a>

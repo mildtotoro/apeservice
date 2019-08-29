@@ -6,8 +6,8 @@ export default [
     btu: [
       "8,500", "11,900", "14,300", "17,700", "20,500", "24,200"
     ],
-    price: '',
-    'old-price': '',
+    price: '1',
+    'old-price': '2',
     catalogLink: 'https://www.daikin.co.th/wp-content/uploads/2019/01/super_smile_2_.pdf',
     imageName: 'daikin-1.jpg'
   },

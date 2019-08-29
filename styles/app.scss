@@ -73,6 +73,7 @@
 
 .product {
   // .badge,
+  height: 258px;
   .brand {
     position: absolute;
   }
@@ -108,7 +109,39 @@
     padding: 2px 5px;
   }
   .description {
-    max-height: 180px;
-    overflow-y: scroll;
+    // height: 100px;
+    overflow: hidden;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
+    // overflow: hidden;
+    // white-space: nowrap;
+    // text-overflow: ellipsis;
+    // max-width: 200px;
+    -webkit-transition: height 1s ease-out;
+    -moz-transition: height 1s ease-out;
+    -ms-transition: height 1s ease-out;
+    -o-transition: height 1s ease-out;
+    transition: height 1s ease-out;
+
+    &:hover {
+      // // height: 120px;
+      // overflow: initial;
+      // background: #ffffff;
+      // z-index: 9;
+      // max-height: auto;
+      // max-height: inherit;
+      // position: relative;
+      // position: absolute;
+      // background: #ffffff;
+      // width: inherit;
+      // -webkit-transition: height 1s ease-out;
+      // -moz-transition: height 1s ease-out;
+      // -ms-transition: height 1s ease-out;
+      // -o-transition: height 1s ease-out;
+      // transition: height 1s ease-out;
+    }
   }
 }
