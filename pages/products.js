@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookMessenger } from "@fortawesome/free-brands-svg-icons";
 import productDaikin from '../assets/product/daikin.js';
 import productUniaire from '../assets/product/uni-aire.js';
+import productCarrier from '../assets/product/carrier.js';
 
 class Products extends React.Component {
   constructor() {
@@ -24,11 +25,13 @@ class Products extends React.Component {
     this.setState({
       products: [
         ...productDaikin,
-        ...productUniaire
+        ...productUniaire,
+        ...productCarrier
       ],
       showProducts: [
         ...productDaikin,
-        ...productUniaire
+        ...productUniaire,
+        ...productCarrier
       ]
     });
   }
@@ -125,8 +128,8 @@ class Products extends React.Component {
                         <div className="row no-gutters h-100">
                           <div className="col-12 col-sm-6 d-flex position-relative">
                             {/* <span className="badge badge-secondary position-absolute">New</span> */}
-                            <div className="brand"><img src={samsung} alt="" /></div>
-                            <img className="img-fluid align-self-center" height="300" src={'./static/assets/products/' + product.brand + '/' + product.imageName} alt="" />
+                            <div className="brand"><img width="70px" src={'./static/assets/products/' + product.brand + '.png'} alt={'apeservice partner' + product.brand} /></div>
+                            <img className="img-fluid align-self-center" height="300" src={'./static/assets/products/' + product.brand + '/' + product.imageName} alt={product.imageName} />
 
                             <div className="btu pt-1 pb-2">
                               {product.btu.map(item => {

@@ -36,7 +36,7 @@ export default [
     price: '',
     'old-price': '',
     catalogLink: 'https://www.uni-aire.com/wp-content/uploads/2017/11/WRV_F-ARV-FSTD.pdf',
-    imageName: 'uniair-3.jpg'
+    imageName: 'uniaire-3.jpg'
   },
   {
     brand: 'uni-aire',
