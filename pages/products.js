@@ -158,13 +158,13 @@ class Products extends React.Component {
                     <button onClick={() => { this.filterByBrand('uni-aire') }} className={(brand === 'uni-aire') ? 'btn btn-success btn-sm' : 'btn btn-outline-primary btn-sm'}>Uni-aire</button>
 
                     <div className="d-sm-inline-block float-right d-lg-none d-none">
-                      <button className="btn-card mr-2" onClick={() => this.renderMode('square')}>
+                      <button className={(mode === 'square') ? 'btn-card mr-2 active' : 'btn-card mr-2'} onClick={() => this.renderMode('square')}>
                         <div className="square square-1"></div>
                         <div className="square square-2"></div>
                         <div className="square square-3"></div>
                         <div className="square square-4"></div>
                       </button>
-                      <button className="btn-list" onClick={() => this.renderMode('list')}>
+                      <button className={(mode === 'list') ? 'btn-list active' : 'btn-list'} onClick={() => this.renderMode('list')}>
                         <div className="item item-1"></div>
                         <div className="item item-2"></div>
                         <div className="item item-3"></div>
@@ -197,13 +197,13 @@ class Products extends React.Component {
                   </div>
 
                   <div className="d-none d-lg-block pl-2 pl-lg-0 ml-lg-auto mt-2">
-                    <button className="btn-card mr-2" onClick={() => this.renderMode('square')}>
+                    <button className={(mode === 'square') ? 'btn-card mr-2 active' : 'btn-card mr-2'} onClick={() => this.renderMode('square')}>
                       <div className="square square-1"></div>
                       <div className="square square-2"></div>
                       <div className="square square-3"></div>
                       <div className="square square-4"></div>
                     </button>
-                    <button className="btn-list" onClick={() => this.renderMode('list')}>
+                    <button className={(mode === 'list') ? 'btn-list active' : 'btn-list'} onClick={() => this.renderMode('list')}>
                       <div className="item item-1"></div>
                       <div className="item item-2"></div>
                       <div className="item item-3"></div>

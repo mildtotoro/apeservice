@@ -34,6 +34,12 @@
     padding: 0;
     position: relative;
     vertical-align: middle;
+    &.active {
+      border-color: $success;
+      .item {
+        border-color: $success;
+      }
+    }
     .item {
       height: 6px;
       width: 20px;
@@ -48,7 +54,12 @@
     border-radius: 2px;
     position: relative;
     vertical-align: middle;
-
+    &.active {
+      border-color: $success;
+      .square {
+        border-color: $success;
+      }
+    }
     .square {
       position: absolute;
       width: 10px;
