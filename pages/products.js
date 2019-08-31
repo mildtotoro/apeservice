@@ -17,6 +17,8 @@ class Products extends React.Component {
         brand: null
       }
     }
+    this.selectPrice = React.createRef();
+    this.selectBtu = React.createRef();
   }
 
   componentDidMount(props, state) {
@@ -45,7 +47,9 @@ class Products extends React.Component {
   }
 
   filterByBrand = (brand) => {
-    // todo: when click same btn mean see all product
+    this.selectBtu.current.value = 'all';
+    this.selectPrice.current.value = 'ราคา';
+
     this.setState((state) => {
       if (brand === state.filter.brand) {
         return {
@@ -105,7 +109,6 @@ class Products extends React.Component {
         showProducts: newShowProducts
       }
     })
-
   }
 
   filterByPrice = (e) => {
@@ -148,7 +151,7 @@ class Products extends React.Component {
                     เรียงโดย
                   </div>
                   <div className="p-2">
-                    <select defaultValue='ราคา' onChange={this.filterByPrice} className="d-inline-block form-control-sm">
+                    <select ref={this.selectPrice} defaultValue='ราคา' onChange={this.filterByPrice} className="d-inline-block form-control-sm">
                       <option >ราคา</option>
                       <option value="min">ราคา จากน้อยไปมาก</option>
                       <option value="max">ราคา จากมากไปน้อย</option>
@@ -158,7 +161,7 @@ class Products extends React.Component {
                     BTU
                   </div>
                   <div className="p-2">
-                    <select ref="" onChange={this.filterByBtu} defaultValue="all" id="" className="d-inline-block form-control-sm">
+                    <select ref={this.selectBtu} onChange={this.filterByBtu} defaultValue="all" id="" className="d-inline-block form-control-sm">
                       <option value="all">All</option>
                       <option value={9000}>9,000 - 11,999</option>
                       <option value={12000}>12,000 - 17,999</option>

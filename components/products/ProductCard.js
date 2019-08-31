@@ -5,6 +5,7 @@ import { faFacebookMessenger } from "@fortawesome/free-brands-svg-icons";
 class ProductCard extends React.Component {
   constructor(props) {
     super();
+
   }
 
   render() {
