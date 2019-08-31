@@ -82,7 +82,6 @@
 // No media query necessary for xl breakpoint as it has no upper bound on its width
 
 .product {
-  // .badge,
   @include media-breakpoint-down(xs) {
   }
   @include media-breakpoint-up(xl) {
@@ -135,12 +134,12 @@
     font-size: 12px;
     padding: 2px 5px;
   }
-  .more-text {
-    position: absolute;
-    z-index: 999;
-    background: #ffffff;
-    padding: 10px;
-  }
+  // .more-text {
+  //   position: absolute;
+  //   z-index: 999;
+  //   background: #ffffff;
+  //   padding: 10px;
+  // }
   .description {
     overflow: hidden;
     display: -webkit-box;

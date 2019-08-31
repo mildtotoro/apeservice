@@ -22,13 +22,28 @@ export default class Slider extends React.Component {
         <Col>
           <Carousel nextIcon={left} controls={false}>
             <Carousel.Item>
-              <img className="img-fluid" src={image1} alt="First slide" />
+              <img className="img-fluid" src={image1} alt="apeservice" />
             </Carousel.Item>
             <Carousel.Item>
-              <img className="img-fluid" src={image2} alt="Third slide" />
+              <img className="img-fluid" src={image2} alt="apeservice" />
             </Carousel.Item>
             <Carousel.Item>
-              <img className="img-fluid" src={image3} alt="Third slide" />
+              <img className="img-fluid" src={image3} alt="apeservice" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="img-fluid" src={image4} alt="apeservice" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="img-fluid" src={image5} alt="apeservice" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="img-fluid" src={image6} alt="apeservice" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="img-fluid" src={image7} alt="apeservice" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="img-fluid" src={image8} alt="apeservice" />
             </Carousel.Item>
           </Carousel>
         </Col>
