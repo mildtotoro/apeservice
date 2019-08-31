@@ -5,6 +5,9 @@ import Slider from "../components/home/slider";
 import Client from "../components/home/Client";
 import { Container, Row, Col } from "react-bootstrap";
 import homeAir from "../assets/images/Residentail.jpg";
+import partner1 from "../assets/images/partners/daikin.jpg";
+import partner2 from "../assets/images/partners/carrier.jpg";
+import partner3 from "../assets/images/partners/uniaire.jpg";
 import commercialAir from "../assets/images/Commercial.jpg";
 import logo from "../assets/images/ape-service-logo.png";
 import article1 from "../assets/images/home-service.jpg";
@@ -40,7 +43,7 @@ function Home() {
               </h6>
               <div className="text-center">
                 <a href="#w">
-                  <img className="img-fluid" src={homeAir} alt="" />
+                  <img className="img-fluid" src={homeAir} alt="apeservice homeair" />
                 </a>
               </div>
               <div className="text-right">
@@ -65,7 +68,7 @@ function Home() {
                     width="443px"
                     className="img-fluid"
                     src={commercialAir}
-                    alt=""
+                    alt="apeservice commercial air"
                   />
                 </a>
               </div>
@@ -80,8 +83,26 @@ function Home() {
         <div className="bg-home py-5 my-5">
           <Container>
             <Row className="">
-              <Col xs="12">
-                <h2 className="pb-4">แคตตาล็อกสินค้า</h2>
+              <Col xs="12" className="text-center">
+                <h1 className="pb-4 text-light">พาร์ทเนอร์</h1>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="p-0 p-lg-3">
+                <a href="#">
+                  <img className="img-fluid p-2 border" src={partner1} alt="apeservice partner daikin" />
+                </a>
+              </Col>
+              <Col className="p-0 p-lg-3">
+                <a href="#">
+                  <img className="img-fluid p-2 border" src={partner2} alt="apeservice partner carrier" />
+                </a>
+
+              </Col>
+              <Col className="p-0 p-lg-3">
+                <a href="#">
+                  <img className="img-fluid p-2 border" src={partner3} alt="apeservice partner uni-aire" />
+                </a>
               </Col>
             </Row>
           </Container>
@@ -101,7 +122,6 @@ function Home() {
                 <Row>
                   <Col lg="5">
                     <img className="img-fluid border p-3 mb-4" src={article1} alt="ape service" />
-
                   </Col>
                   <Col lg="7">
                     <a className="text-dark font-weight-light" href="#r"><span className="h5">&bull; </span>  รายละเอียดการล้างเครื่องปรับอากาศต่อครั้ง</a><br />
@@ -112,7 +132,6 @@ function Home() {
                     <a className="text-dark font-weight-light" href="#e"><span className="h5">&bull; </span> อัตราค่าบริการติดตั้งเครื่องปรับอากาศ</a>
                   </Col>
                 </Row>
-
               </Col>
               {/* <div className="w-100"></div> */}
               <Col className="d-lg-none d-flex">
@@ -150,7 +169,6 @@ function Home() {
             </Col>
           </Row>
         </Container>
-
       </Layout>
     </div>
   );

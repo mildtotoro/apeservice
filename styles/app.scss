@@ -71,9 +71,40 @@
   }
 }
 
+@include media-breakpoint-down(xs) {
+}
+@include media-breakpoint-down(sm) {
+}
+@include media-breakpoint-down(md) {
+}
+@include media-breakpoint-down(lg) {
+}
+// No media query necessary for xl breakpoint as it has no upper bound on its width
+
 .product {
   // .badge,
-  height: 258px;
+  @include media-breakpoint-down(xs) {
+  }
+  @include media-breakpoint-up(xl) {
+    .name {
+      height: 55px;
+      color: red;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    height: 258px;
+    .name {
+      height: 65px;
+      overflow: hidden;
+      color: blue;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .name {
+      font-size: 24px;
+    }
+  }
+
   .brand {
     position: absolute;
     top: 10px;
@@ -106,10 +137,14 @@
     font-size: 12px;
     padding: 2px 5px;
   }
+  .more-text {
+    position: absolute;
+    z-index: 999;
+    background: #ffffff;
+    padding: 10px;
+  }
   .description {
-    // height: 100px;
     overflow: hidden;
-
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;

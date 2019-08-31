@@ -18,48 +18,117 @@ class Products extends React.Component {
     this.state = {
       products: [],
       showProducts: [],
+      filter: {
+        brand: null
+      }
     }
   }
 
   componentDidMount(props, state) {
+    const products = [
+      ...productDaikin,
+      ...productUniaire,
+      ...productCarrier
+    ];
+
+    const newProducts = products.map((product) => {
+      // let priceNum = [...product.price]
+      const btuValues = product.btu.map((item) => {
+        item = item.replace(",", "");
+        return parseInt(item);
+      })
+      return {
+        ...product,
+        btuValues
+      }
+    });
+
     this.setState({
-      products: [
-        ...productDaikin,
-        ...productUniaire,
-        ...productCarrier
-      ],
-      showProducts: [
-        ...productDaikin,
-        ...productUniaire,
-        ...productCarrier
-      ]
+      products: newProducts,
+      showProducts: newProducts
     });
   }
 
   filterByBrand = (brand) => {
     // todo: when click same btn mean see all product
     this.setState((state) => {
-      const showProducts = state.products.filter((product) => {
-        return product.brand === brand
-      })
-      return {
-        ...state,
-        showProducts
+      if (brand === state.filter.brand) {
+        return {
+          filter: {
+            brand: null
+          },
+          showProducts: state.products
+        }
+      } else {
+        const showProducts = state.products.filter((product) => {
+          return product.brand === brand
+        })
+
+        return {
+          filter: {
+            brand
+          },
+          showProducts
+        }
       }
     })
   }
 
   filterByBtu = (e) => {
+    const value = e.target.value;
+
+    // const btuMap = {
+    //   9000: { max: 11999 },
+    //   12000: { max: 17999 },
+    //   18000: { max: 23999 },
+    //   24000: { max: 29999 },
+    // }
+
+    this.setState((state) => {
+      let newShowProducts = [];
+      let products = state.products;
+      if (state.filter.brand !== null) {
+        products = state.products.filter((product) => {
+          return product.brand === state.filter.brand;
+        });
+
+        console.log({ products });
+
+      }
+
+      if (value === 'all') {
+        newShowProducts = products;
+      } else {
+        newShowProducts = products.filter((product) => {
+          return product.btuValues.some((btu) => {
+            return btu > value
+          })
+        })
+      }
+
+      return {
+        showProducts: newShowProducts
+      }
+    })
+
+  }
+
+  filterByPrice = (e) => {
     console.log(e.target.value)
   }
 
-  filterByPrice = () => {
+  showMoreDescription = (text) => {
+    return text.substring(150);
+  }
 
+  showDescription = text => {
+    return text.substring(0, 149) + '-'
   }
 
   render() {
-    const { showProducts } = this.state;
-    console.log({ showProducts })
+    const { showProducts, filter: { brand } } = this.state;
+    console.log(this.state)
+
     return (
       <Layout>
         <Container className="page-product">
@@ -76,25 +145,25 @@ class Products extends React.Component {
                 <div className="d-flex flex-row">
                   <div className="p-2">ยี่ห้อ</div>
                   <div className="p-2">
-                    <button onClick={() => { this.filterByBrand('carrier') }} className="btn btn-outline-primary btn-sm">Carrier</button>
-                    <button onClick={() => { this.filterByBrand('daikin') }} className="btn btn-outline-primary btn-sm mx-2">Daikin</button>
-                    <button onClick={() => { this.filterByBrand('uni-aire') }} className="btn btn-outline-primary btn-sm">Uni-aire</button>
+                    <button onClick={() => { this.filterByBrand('carrier') }} className={(brand === 'carrier') ? 'btn btn-success btn-sm' : 'btn btn-outline-primary btn-sm'}>Carrier</button>
+                    <button onClick={() => { this.filterByBrand('daikin') }} className={(brand === 'daikin') ? 'btn btn-success btn-sm mx-2' : 'btn btn-outline-primary btn-sm mx-2'}>Daikin</button>
+                    <button onClick={() => { this.filterByBrand('uni-aire') }} className={(brand === 'uni-aire') ? 'btn btn-success btn-sm' : 'btn btn-outline-primary btn-sm'}>Uni-aire</button>
                   </div>
                   <div className="p-2">
                     เรียงโดย
                   </div>
                   <div className="p-2">
-                    <select defaultValue='ราคา' className="d-inline-block form-control-sm">
+                    <select defaultValue='ราคา' onChange={this.filterByPrice} className="d-inline-block form-control-sm">
                       <option >ราคา</option>
-                      <option value="">ราคา จากน้อยไปมาก</option>
-                      <option value="">ราคา จากมากไปน้อย</option>
+                      <option value="min">ราคา จากน้อยไปมาก</option>
+                      <option value="max">ราคา จากมากไปน้อย</option>
                     </select>
                   </div>
                   <div className="p-2">
                     BTU
                   </div>
                   <div className="p-2">
-                    <select name="" onChange={this.filterByBtu} defaultValue="all" id="" className="d-inline-block form-control-sm">
+                    <select ref="" onChange={this.filterByBtu} defaultValue="all" id="" className="d-inline-block form-control-sm">
                       <option value="all">All</option>
                       <option value={9000}>9,000 - 11,999</option>
                       <option value={12000}>12,000 - 17,999</option>
@@ -139,7 +208,7 @@ class Products extends React.Component {
                           </div>
                           <div className="col-12 col-sm-6">
                             <div className="p-2 p-lg-3">
-                              <h4 className="name mb-0">{product.name}</h4>
+                              <h2 className="name mb-0 h5">{product.name}</h2>
                               {/* <div className="btu pt-1 pb-2">
                                 {product.btu.map(item => {
                                   return <span key={product.name + item} className="badge badge-light font-weight-light border mr-1">{item} BTU/H</span>
@@ -151,6 +220,12 @@ class Products extends React.Component {
                               </div>
                               <p className="h6 pt-2 description">
                                 {product.description}
+                                {/* {this.showDescription(product.description)}
+                                <div></div>
+                                <button className={(product.description.length > 200) ? 'btn btn-link p-0' : 'd-none'}>more</button>
+                                <div className={(product.description.length > 200) ? 'border more-text' : 'd-none'}>
+                                  {this.showMoreDescription(product.description)}
+                                </div> */}
                               </p>
                               {/* <button className="btn btn-link">more</button> */}
                               <div className="">
@@ -167,39 +242,6 @@ class Products extends React.Component {
                     </div>
                   )
                 })}
-                {/* <div className="product border">
-                  <div className="row">
-                    <div className="col-12 col-sm-6 d-flex position-relative">
-                      <span className="badge badge-secondary position-absolute">New</span>
-                      <div className="brand"><img src={samsung} alt="" /></div>
-                      <img className="img-fluid align-self-center" src={product1} alt="" />
-                      <span className="btn-catalog text-dark">
-                        <a href="http://www.centralair.co.th/product/catalog/walltype/2016_CFW-IVH.pdf" target="_blank">Catalog</a>
-                      </span>
-                    </div>
-                    <div className="col-12 col-sm-6">
-                      <div className="p-2 p-lg-4">
-                        <h4 className="name mb-0">GEMINI 42TEVGB</h4>
-                        <div className="btu pb-2">
-                          <span className="badge badge-light">25,100 BTU/H</span>
-                        </div>
-                        <div className="price pt-2">
-                          ฿ 10,500
-                          <span className="old-price pl-3 pt-2 h6">฿ 11,500</span>
-                        </div>
-                        <p className="h6 pt-2">
-                          rem aliquam porro repellendus harum quae accusantium eius iste. Ipsa quis eveniet saepe.
-                        </p>
-                        <div className="">
-                          <FontAwesomeIcon className="h5 mb-0 pr-2" icon={faFacebookMessenger} />
-                          <a href="#f" className="text-primary btn btn-link">สอบถาม/สั่งซื้อสินค้า </a>
-                        </div>
-                      </div>
-  
-                    </div>
-                  </div>
-  
-                </div> */}
               </div>
             </Col>
           </Row>
