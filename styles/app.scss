@@ -31,11 +31,13 @@
     height: 32px;
     border: 1px solid rgb(166, 166, 166);
     border-radius: 2px;
+    padding: 0;
     position: relative;
+    vertical-align: middle;
     .item {
       height: 6px;
       width: 20px;
-      margin: 3px auto 0;
+      margin: 2px auto 0;
       border: 1px solid rgb(166, 166, 166);
     }
   }
@@ -45,6 +47,8 @@
     border: 1px solid rgb(166, 166, 166);
     border-radius: 2px;
     position: relative;
+    vertical-align: middle;
+
     .square {
       position: absolute;
       width: 10px;
@@ -90,7 +94,9 @@
     }
   }
   @include media-breakpoint-up(lg) {
-    height: 258px;
+    &.list {
+      height: 258px;
+    }
     .name {
       height: 65px;
       overflow: hidden;

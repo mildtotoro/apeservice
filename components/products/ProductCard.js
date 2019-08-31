@@ -9,12 +9,12 @@ class ProductCard extends React.Component {
   }
 
   render() {
-    const { product } = this.props;
+    const { product, mode } = this.props;
     return (
-      <div className="col-12 col-lg-6 mt-4">
-        <div className="product border">
+      <div className={(mode === 'list') ? 'col-12 col-lg-6 mt-4' : 'col-12 col-md-6 col-lg-4 mt-4'}>
+        <div className={(mode === 'list') ? 'product list border' : 'product border'}>
           <div className="row no-gutters h-100">
-            <div className="col-12 col-sm-6 d-flex position-relative">
+            <div className={(mode === 'list') ? 'col-12 col-sm-6 d-flex position-relative' : 'col-12'}>
               {/* <span className="badge badge-secondary position-absolute">New</span> */}
               <div className="brand"><img width="70px" src={'./static/assets/products/' + product.brand + '.png'} alt={'apeservice partner' + product.brand} /></div>
               <img className="img-fluid align-self-center" height="300" src={'./static/assets/products/' + product.brand + '/' + product.imageName} alt={product.imageName} />
@@ -25,7 +25,7 @@ class ProductCard extends React.Component {
                 })}
               </div>
             </div>
-            <div className="col-12 col-sm-6">
+            <div className={(mode === 'list') ? 'col-12 col-sm-6' : 'col-12'}>
               <div className="p-2 p-lg-3">
                 <h2 className="name mb-0 h5">{product.name}</h2>
                 <div className={(product.price === '') ? 'd-none' : 'price pt-2'} >

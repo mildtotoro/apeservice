@@ -15,7 +15,8 @@ class Products extends React.Component {
       showProducts: [],
       filter: {
         brand: null
-      }
+      },
+      mode: 'list'
     }
     this.selectPrice = React.createRef();
     this.selectBtu = React.createRef();
@@ -123,8 +124,17 @@ class Products extends React.Component {
     return text.substring(0, 149) + '-'
   }
 
+  renderMode = mode => {
+    this.setState({
+      mode
+    });
+
+
+    console.log({ mode })
+  }
+
   render() {
-    const { showProducts, filter: { brand } } = this.state;
+    const { showProducts, filter: { brand }, mode } = this.state;
     console.log(this.state)
 
     return (
@@ -140,27 +150,42 @@ class Products extends React.Component {
           <Row>
             <Col className="py-5 h5">
               <div className="pb-3 font-weight-light">
-                <div className="d-flex flex-row">
+                <div className="d-block d-lg-flex flex-row">
                   <div className="p-2">ยี่ห้อ</div>
                   <div className="p-2">
                     <button onClick={() => { this.filterByBrand('carrier') }} className={(brand === 'carrier') ? 'btn btn-success btn-sm' : 'btn btn-outline-primary btn-sm'}>Carrier</button>
                     <button onClick={() => { this.filterByBrand('daikin') }} className={(brand === 'daikin') ? 'btn btn-success btn-sm mx-2' : 'btn btn-outline-primary btn-sm mx-2'}>Daikin</button>
                     <button onClick={() => { this.filterByBrand('uni-aire') }} className={(brand === 'uni-aire') ? 'btn btn-success btn-sm' : 'btn btn-outline-primary btn-sm'}>Uni-aire</button>
+
+                    <div className="d-sm-inline-block float-right d-lg-none d-none">
+                      <button className="btn-card mr-2" onClick={() => this.renderMode('square')}>
+                        <div className="square square-1"></div>
+                        <div className="square square-2"></div>
+                        <div className="square square-3"></div>
+                        <div className="square square-4"></div>
+                      </button>
+                      <button className="btn-list" onClick={() => this.renderMode('list')}>
+                        <div className="item item-1"></div>
+                        <div className="item item-2"></div>
+                        <div className="item item-3"></div>
+                      </button>
+                    </div>
                   </div>
-                  <div className="p-2">
+
+                  <div className="p-2 d-inline-block d-lg-block">
                     เรียงโดย
                   </div>
-                  <div className="p-2">
+                  <div className="p-2 d-inline-block d-lg-block">
                     <select ref={this.selectPrice} defaultValue='ราคา' onChange={this.filterByPrice} className="d-inline-block form-control-sm">
                       <option >ราคา</option>
                       <option value="min">ราคา จากน้อยไปมาก</option>
                       <option value="max">ราคา จากมากไปน้อย</option>
                     </select>
                   </div>
-                  <div className="p-2">
+                  <div className="d-inline-block d-lg-block p-2">
                     BTU
                   </div>
-                  <div className="p-2">
+                  <div className="d-inline-block d-lg-block p-2">
                     <select ref={this.selectBtu} onChange={this.filterByBtu} defaultValue="all" id="" className="d-inline-block form-control-sm">
                       <option value="all">All</option>
                       <option value={9000}>9,000 - 11,999</option>
@@ -171,18 +196,18 @@ class Products extends React.Component {
                     </select>
                   </div>
 
-                  <div className="ml-auto">
-                    <div className="btn-card d-inline-block mr-2">
+                  <div className="d-none d-lg-block pl-2 pl-lg-0 ml-lg-auto mt-2">
+                    <button className="btn-card mr-2" onClick={() => this.renderMode('square')}>
                       <div className="square square-1"></div>
                       <div className="square square-2"></div>
                       <div className="square square-3"></div>
                       <div className="square square-4"></div>
-                    </div>
-                    <div className="btn-list d-inline-block">
+                    </button>
+                    <button className="btn-list" onClick={() => this.renderMode('list')}>
                       <div className="item item-1"></div>
                       <div className="item item-2"></div>
                       <div className="item item-3"></div>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -192,6 +217,7 @@ class Products extends React.Component {
                     <ProductCard
                       key={product.name}
                       product={product}
+                      mode={mode}
                     />
                   )
                 })}
