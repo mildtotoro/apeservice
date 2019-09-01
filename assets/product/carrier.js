@@ -6,7 +6,7 @@ export default [
     btu: [
       '9,200', '12,200', '18,000', '21,000'
     ],
-    price: '',
+    price: '14,300',
     'old-price': '',
     catalogLink: 'http://www.carrier.co.th/products/carrier/dl/42TVAA_catalog.pdf',
     imageName: '42tvaa.jpg'
@@ -18,7 +18,7 @@ export default [
     btu: [
       '8,500', '11,900', '17,000', '20,400', '25,200'
     ],
-    price: '',
+    price: '10,000',
     'old-price': '',
     catalogLink: 'http://www.carrier.co.th/products/carrier/dl/42TEVGB_catalog.pdf',
     imageName: '42tevgb.jpg'
@@ -30,7 +30,7 @@ export default [
     btu: [
       '9,536', '12,447', '15,790', '18,000', '20,487'
     ],
-    price: '',
+    price: '11,600',
     'old-price': '',
     catalogLink: 'http://www.carrier.co.th/products/carrier/dl/42TVGS_catalog.pdf',
     imageName: '42tvgs.jpg'
@@ -42,7 +42,7 @@ export default [
     btu: [
       '9,200', '12,200', '18,000', '24,200'
     ],
-    price: '',
+    price: '9,500',
     'old-price': '',
     catalogLink: 'http://www.carrier.co.th/products/carrier/dl/42TSGS_catalog.pdf',
     imageName: '42tsgs.jpg'
@@ -54,7 +54,7 @@ export default [
     btu: [
       '9,597', '12,214', '18,180', '25,061'
     ],
-    price: '',
+    price: '9,000',
     'old-price': '',
     catalogLink: 'http://www.carrier.co.th/products/carrier/dl/42AAF_catalog.pdf',
     imageName: '42aaf.jpg'
@@ -78,7 +78,7 @@ export default [
     btu: [
       '30,500', '35,000', '36,800'
     ],
-    price: '',
+    price: '34,300',
     'old-price': '',
     catalogLink: 'http://www.carrier.co.th/products/carrier/dl/42HGE_catalog.pdf',
     imageName: '42hge.jpg'

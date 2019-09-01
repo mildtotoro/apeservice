@@ -6,8 +6,8 @@ export default [
     btu: [
       "8,500", "11,900", "14,300", "17,700", "20,500", "24,200"
     ],
-    price: '1',
-    'old-price': '2',
+    price: '14,300',
+    'old-price': '',
     catalogLink: 'https://www.daikin.co.th/wp-content/uploads/2019/01/super_smile_2_.pdf',
     imageName: 'daikin-1.jpg'
   },
@@ -30,7 +30,7 @@ export default [
     btu: [
       "9,200", "12,300", "15,000", "18,100", "20,500"
     ],
-    price: '',
+    price: '10,800',
     'old-price': '',
     catalogLink: 'https://www.daikin.co.th/wp-content/uploads/2019/01/sabai_inverter2_.pdf',
     imageName: 'daikin-3.jpg'
@@ -42,7 +42,7 @@ export default [
     btu: [
       "8,500", "11,900", "14,300", "17,700", "20,500", "24,200"
     ],
-    price: '',
+    price: '19,000',
     'old-price': '',
     catalogLink: 'https://www.daikin.co.th/wp-content/uploads/2018/03/Super-Smart-2018_Catalog.pdf',
     imageName: 'daikin-4.jpg'

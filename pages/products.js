@@ -35,8 +35,10 @@ class Products extends React.Component {
         item = item.replace(",", "");
         return parseInt(item);
       })
+      const priceValue = (product.price !== '') ? parseInt(product.price.replace(",", "")) : 0;
       return {
         ...product,
+        priceValue,
         btuValues
       }
     });
@@ -113,7 +115,22 @@ class Products extends React.Component {
   }
 
   filterByPrice = (e) => {
+    let newShowProducts = Array.from(this.state.showProducts);
+    if (e.target.value === 'min') {
+      newShowProducts.sort((a, b) => {
+        return a.priceValue - b.priceValue
+      })
+    } else {
+      newShowProducts.sort((a, b) => {
+        return b.priceValue - a.priceValue
+      })
+    }
+
+    this.setState({
+      showProducts: newShowProducts
+    })
     console.log(e.target.value)
+
   }
 
   showMoreDescription = (text) => {

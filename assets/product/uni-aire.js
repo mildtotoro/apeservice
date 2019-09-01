@@ -33,7 +33,7 @@ export default [
     btu: [
       '9,121', '12,164', '18,173', '24,236'
     ],
-    price: '',
+    price: '9,800',
     'old-price': '',
     catalogLink: 'https://www.uni-aire.com/wp-content/uploads/2017/11/WRV_F-ARV-FSTD.pdf',
     imageName: 'uniaire-3.jpg'
@@ -45,7 +45,7 @@ export default [
     btu: [
       '9,566', '12,038', '18,328', '24,252'
     ],
-    price: '',
+    price: '10,300',
     'old-price': '',
     catalogLink: 'https://www.uni-aire.com/wp-content/uploads/2016/07/WRV-RA_ACV-RA-TH-STD.pdf',
     imageName: 'uniaire-4.png'
