@@ -1,17 +1,25 @@
 const withSass = require("@zeit/next-sass");
 const withImages = require("next-images");
+const webpack = require('webpack');
 // todo remoev withcss
+const isProd = (process.env.NODE_ENV || 'production') === 'production';
+const assetPrefix = isProd ? '/apeservice' : '';
+
 module.exports = withSass(
   withImages({
-    assetPrefix: process.env.NODE_ENV === 'production' ? '/apeservice' : '',
     exportPathMap: function () {
       return {
         '/': { page: '/' },
         // '/': { page: '/' },
       };
     },
-
+    assetPrefix,
     webpack: function (config) {
+      config.plugins.push(
+        new webpack.DefinePlugin({
+          'process.env.ASSET_PREFIX': JSON.stringify(assetPrefix),
+        }),
+      )
       config.module.rules.push({
         test: /\.(eot|woff|woff2|ttf|svg)$/, // for path fonts
         use: {
