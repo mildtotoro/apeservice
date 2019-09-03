@@ -3,7 +3,7 @@ const withImages = require("next-images");
 // todo remoev withcss
 module.exports = withSass(
   withImages({
-
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/{reponame}' : '',
     exportPathMap: function () {
       return {
         '/': { page: '/' },
