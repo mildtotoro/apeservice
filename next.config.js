@@ -10,10 +10,11 @@ module.exports = withSass(
     exportPathMap: function () {
       return {
         '/': { page: '/' },
-        // '/': { page: '/' },
+        // '/products': { page: '/products' },
       };
     },
     assetPrefix,
+    linkPrefix: assetPrefix,
     webpack: function (config) {
       config.plugins.push(
         new webpack.DefinePlugin({
