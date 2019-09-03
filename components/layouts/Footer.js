@@ -35,13 +35,13 @@ export default class Footer extends React.Component {
               <h5>แคตตาล็อกเครื่องปรับอากาศ</h5>
               <ul style={{ listStyleType: "none" }} className="pl-1">
                 <li>
-                  <a className="text-light" href="#f">แอร์ Amena</a>
-                </li>
-                <li>
-                  <a className="text-light" href="#f">แอร์ Amena</a>
-                </li>
-                <li>
                   <a className="text-light" href="#f">แอร์ Carrier</a>
+                </li>
+                <li>
+                  <a className="text-light" href="#f">แอร์ Daikin</a>
+                </li>
+                <li>
+                  <a className="text-light" href="#f">แอร์ Uni-aire</a>
                 </li>
               </ul>
             </div>
