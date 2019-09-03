@@ -14,13 +14,7 @@ module.exports = withSass(
       };
     },
     assetPrefix,
-    linkPrefix: assetPrefix, // not work
     webpack: function (config) {
-      config.plugins.push( // not work
-        new webpack.DefinePlugin({
-          'process.env.ASSET_PREFIX': JSON.stringify(assetPrefix),
-        }),
-      )
       config.module.rules.push({
         test: /\.(eot|woff|woff2|ttf|svg)$/, // for path fonts
         use: {
