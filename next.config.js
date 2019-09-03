@@ -10,13 +10,13 @@ module.exports = withSass(
     exportPathMap: function () {
       return {
         '/': { page: '/' },
-        // '/products': { page: '/products' },
+        '/products': { page: '/products' },
       };
     },
     assetPrefix,
-    linkPrefix: assetPrefix,
+    linkPrefix: assetPrefix, // not work
     webpack: function (config) {
-      config.plugins.push(
+      config.plugins.push( // not work
         new webpack.DefinePlugin({
           'process.env.ASSET_PREFIX': JSON.stringify(assetPrefix),
         }),
