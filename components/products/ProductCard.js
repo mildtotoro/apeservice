@@ -2,6 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookMessenger } from "@fortawesome/free-brands-svg-icons";
 
+const assetPrefix = process.env.NODE_ENV === 'production' ? '/apeservice' : '';
+
 class ProductCard extends React.Component {
   constructor(props) {
     super();
@@ -16,8 +18,8 @@ class ProductCard extends React.Component {
           <div className="row no-gutters h-100">
             <div className={(mode === 'list') ? 'col-12 col-sm-6 d-flex position-relative' : 'col-12'}>
               {/* <span className="badge badge-secondary position-absolute">New</span> */}
-              <div className="brand"><img width="70px" src={'./static/assets/products/' + product.brand + '.png'} alt={'apeservice partner' + product.brand} /></div>
-              <img className="img-fluid align-self-center" height="300" src={'./static/assets/products/' + product.brand + '/' + product.imageName} alt={product.imageName} />
+              <div className="brand"><img width="70px" src={assetPrefix + '/static/assets/products/' + product.brand + '.png'} alt={'apeservice partner' + product.brand} /></div>
+              <img className="img-fluid align-self-center" height="300" src={assetPrefix + '/static/assets/products/' + product.brand + '/' + product.imageName} alt={product.imageName} />
 
               <div className="btu pt-1 pb-2">
                 {product.btu.map(item => {
