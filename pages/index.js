@@ -1,5 +1,4 @@
 import React from "react";
-// import "../styles/app.scss";
 import Layout from "../components/layouts/Layout";
 import Slider from "../components/home/slider";
 import Client from "../components/home/Client";
@@ -14,6 +13,7 @@ import article1 from "../assets/images/home-service.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faFacebookSqare } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
+import Link from 'next/link';
 
 function Home() {
   return (
@@ -42,14 +42,16 @@ function Home() {
                 numquam eum ipsam placeat id aut.
               </h6>
               <div className="text-center">
-                <a href="#w">
-                  <img className="img-fluid" src={homeAir} alt="apeservice homeair" />
-                </a>
+                <Link href="/products">
+                  <a>
+                    <img className="img-fluid" src={homeAir} alt="apeservice homeair" />
+                  </a>
+                </Link>
               </div>
               <div className="text-right">
-                <a className="text-right" href="#w">
-                  ดูเพิ่มเติม >
-                </a>
+                <Link href="/products">
+                  <a className="text-right">ดูเพิ่มเติม ></a>
+                </Link>
               </div>
             </Col>
             <Col>
@@ -89,18 +91,18 @@ function Home() {
             </Row>
             <Row>
               <Col className="p-0 p-lg-3">
-                <a href="#">
+                <a href="https://www.daikin.co.th/" target="_blank">
                   <img className="img-fluid p-2 border" src={partner1} alt="apeservice partner daikin" />
                 </a>
               </Col>
               <Col className="p-0 p-lg-3">
-                <a href="#">
+                <a href="http://www.carrier.co.th" target="_blank">
                   <img className="img-fluid p-2 border" src={partner2} alt="apeservice partner carrier" />
                 </a>
 
               </Col>
               <Col className="p-0 p-lg-3">
-                <a href="#">
+                <a href="https://uni-aire.com/th/" target="_blank">
                   <img className="img-fluid p-2 border" src={partner3} alt="apeservice partner uni-aire" />
                 </a>
               </Col>

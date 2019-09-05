@@ -54,8 +54,9 @@ export default class MenuBar extends React.Component {
               <Link href="/">
                 <a className="nav-link">หน้าหลัก</a>
               </Link>
-
-              <Nav.Link href="#link">บริการ</Nav.Link>
+              <Link href="/service">
+                <a className="nav-link">บริการ</a>
+              </Link>
               <Nav.Link
                 target="_blank"
                 href="http://www.daikin.co.th/service-btu-calculation/"
@@ -65,10 +66,18 @@ export default class MenuBar extends React.Component {
               <Link href="/products">
                 <a className="nav-link">สินค้า</a>
               </Link>
-              <Nav.Link href="#showcase">ตัวอย่างผลงาน</Nav.Link>
-              <Nav.Link href="#aboutus">เกี่ยวกับเรา</Nav.Link>
-              <Nav.Link href="#contactus">ติดต่อเรา</Nav.Link>
-              <Nav.Link href="#contactus">วิธีการชำระเงิน</Nav.Link>
+              <Link href="/show-case">
+                <a className="nav-link">ตัวอย่างผลงาน</a>
+              </Link>
+              <Link href="/about-us">
+                <a className="nav-link">เกี่ยวกับเรา</a>
+              </Link>
+              <Link href="/contact-us">
+                <a className="nav-link">ติดต่อเรา</a>
+              </Link>
+              <Link href="/how-to-order">
+                <a className="nav-link">วิธีการชำระเงิน</a>
+              </Link>
               {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
