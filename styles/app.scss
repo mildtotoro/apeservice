@@ -107,6 +107,12 @@
   @include media-breakpoint-up(lg) {
     &.list {
       height: 258px;
+      &.auto-height {
+        height: auto;
+      }
+      .product-image-wrapper {
+        height: 258px;
+      }
     }
     .name {
       height: 65px;

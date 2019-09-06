@@ -1,39 +1,64 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookMessenger } from "@fortawesome/free-brands-svg-icons";
+import get from 'lodash/get';
 
 const assetPrefix = process.env.NODE_ENV === 'production' ? '/apeservice' : '';
 
 class ProductCard extends React.Component {
   constructor(props) {
     super();
+    this.state = {
+      isShowPrices: false
+    }
+  }
 
+  toggleShowPrices = () => {
+    this.setState((state) => {
+      return {
+        isShowPrices: !state.isShowPrices
+      }
+    })
   }
 
   render() {
+    const { isShowPrices } = this.state;
     const { product, mode } = this.props;
+    const price = get(product, 'priceList[0]["price"]', 0);
+    const btu = get(product, 'priceList[0]["btu"]', "");
+    let classNameProduct = "product border";
+    if (mode === 'list') {
+      classNameProduct = classNameProduct + ' list';
+      if (isShowPrices) {
+        classNameProduct = classNameProduct + ' auto-height';
+      }
+    }
+    console.log({ isShowPrices })
     return (
       <div className={(mode === 'list') ? 'col-12 col-lg-6 mt-4' : 'col-12 col-md-6 col-lg-4 mt-4'}>
-        <div className={(mode === 'list') ? 'product list border' : 'product border'}>
+        <div className={classNameProduct}>
           <div className="row no-gutters h-100">
-            <div className={(mode === 'list') ? 'col-12 col-sm-6 d-flex position-relative' : 'col-12'}>
+            <div className={(mode === 'list') ? 'product-image-wrapper col-12 col-sm-6 d-flex position-relative' : 'col-12'}>
               {/* <span className="badge badge-secondary position-absolute">New</span> */}
               <div className="brand"><img width="70px" src={assetPrefix + '/static/assets/products/' + product.brand + '.png'} alt={'apeservice partner' + product.brand} /></div>
               <img className="img-fluid align-self-center" height="300" src={assetPrefix + '/static/assets/products/' + product.brand + '/' + product.imageName} alt={product.imageName} />
 
               <div className="btu pt-1 pb-2">
-                {product.btu.map(item => {
-                  return <span key={product.name + item} className="badge badge-light font-weight-light border mr-1">{item} BTU/H</span>
+                {product.priceList.map(item => {
+                  return <span key={product.name + item.btu} className="badge badge-light font-weight-light border mr-1">{item.btu} BTU/H</span>
                 })}
               </div>
             </div>
             <div className={(mode === 'list') ? 'col-12 col-sm-6' : 'col-12'}>
               <div className="p-2 p-lg-3">
                 <h2 className="name mb-0 h5">{product.name}</h2>
-                <div className={(product.price === '') ? 'd-none' : 'price pt-2'} >
-                  ฿ {product.price}
-                  <span className={(product['old-price'] === '') ? 'd-none' : 'old-price pl-3 pt-2 h6'}>฿ {product["old-price"]}</span>
+                <div className={(price === 0) ? 'd-none' : 'price pt-2'} >
+                  ฿ {price}
+                  <span style={{ fontSize: '16px' }} className="badge badge-light font-weight-light border ml-1">({btu} BTU)</span>
+
                 </div>
+                <div className={(product['old-price'] === '') ? 'd-none' : 'old-price h6'}>฿ {product["old-price"]}</div>
+
                 <p className="h6 pt-2 description">
                   {product.description}
                 </p>
@@ -41,6 +66,27 @@ class ProductCard extends React.Component {
                   <FontAwesomeIcon className="h5 mb-0 pr-2" icon={faFacebookMessenger} />
                   <a href="#f" className="text-primary btn btn-link">สอบถาม/สั่งซื้อสินค้า </a>
                 </div>
+                <button onClick={this.toggleShowPrices} className="btn btn-info btn-sm">ดูราคาสินค้าเพิ่มเติม</button>
+                {isShowPrices ? <table className="table">
+                  <thead>
+                    <tr>
+                      <td>ราคา</td>
+                      <td>BTU</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {product.priceList.map(item => {
+                      return (
+                        <tr key={item.btu}>
+                          <td>{item.price}</td>
+                          <td>{item.btu}</td>
+                        </tr>
+                      )
+                    })}
+                  </tbody>
+                </table> : null}
+
+
                 <span className="btn-catalog text-dark">
                   <a href={product.catalogLink} target="_blank">Catalog</a>
                 </span>

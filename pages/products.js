@@ -29,23 +29,23 @@ class Products extends React.Component {
       ...productCarrier
     ];
 
-    const newProducts = products.map((product) => {
-      // let priceNum = [...product.price]
-      const btuValues = product.btu.map((item) => {
-        item = item.replace(",", "");
-        return parseInt(item);
-      })
-      const priceValue = (product.price !== '') ? parseInt(product.price.replace(",", "")) : 0;
-      return {
-        ...product,
-        priceValue,
-        btuValues
-      }
-    });
+    // const newProducts = products.map((product) => {
+    //   // let priceNum = [...product.price]
+    //   const btuValues = product.btu.map((item) => {
+    //     item = item.replace(",", "");
+    //     return parseInt(item);
+    //   })
+    //   const priceValue = (product.price !== '') ? parseInt(product.price.replace(",", "")) : 0;
+    //   return {
+    //     ...product,
+    //     priceValue,
+    //     btuValues
+    //   }
+    // });
 
     this.setState({
-      products: newProducts,
-      showProducts: newProducts
+      products,
+      showProducts: products
     });
   }
 
@@ -102,8 +102,8 @@ class Products extends React.Component {
         newShowProducts = products;
       } else {
         newShowProducts = products.filter((product) => {
-          return product.btuValues.some((btu) => {
-            return btu > value
+          return product.priceList.some((item) => {
+            return item.btu > value
           })
         })
       }
@@ -118,19 +118,17 @@ class Products extends React.Component {
     let newShowProducts = Array.from(this.state.showProducts);
     if (e.target.value === 'min') {
       newShowProducts.sort((a, b) => {
-        return a.priceValue - b.priceValue
+        return a.priceList[0]['price'] - b.priceList[0]['price']
       })
     } else {
       newShowProducts.sort((a, b) => {
-        return b.priceValue - a.priceValue
+        return b.priceList[0]['price'] - a.priceList[0]['price']
       })
     }
 
     this.setState({
       showProducts: newShowProducts
     })
-    console.log(e.target.value)
-
   }
 
   showMoreDescription = (text) => {
