@@ -29,23 +29,26 @@ class Products extends React.Component {
       ...productCarrier
     ];
 
-    // const newProducts = products.map((product) => {
-    //   // let priceNum = [...product.price]
-    //   const btuValues = product.btu.map((item) => {
-    //     item = item.replace(",", "");
-    //     return parseInt(item);
-    //   })
-    //   const priceValue = (product.price !== '') ? parseInt(product.price.replace(",", "")) : 0;
-    //   return {
-    //     ...product,
-    //     priceValue,
-    //     btuValues
-    //   }
-    // });
+    const newProducts = products.map((product) => {
+      const priceDisplayList = product.priceList.map((item) => {
+        const priceDisplay = new Intl.NumberFormat('TH', { style: 'decimal', currency: 'THB' }).format(item.price);
+        const btuDisplay = new Intl.NumberFormat('TH', { style: 'decimal' }).format(item.btu);
+
+        return {
+          btu: btuDisplay,
+          price: priceDisplay
+        }
+
+      })
+      return {
+        ...product,
+        priceDisplayList
+      }
+    });
 
     this.setState({
-      products,
-      showProducts: products
+      products: newProducts,
+      showProducts: newProducts
     });
   }
 

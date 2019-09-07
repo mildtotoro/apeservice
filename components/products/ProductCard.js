@@ -24,8 +24,8 @@ class ProductCard extends React.Component {
   render() {
     const { isShowPrices } = this.state;
     const { product, mode } = this.props;
-    const price = get(product, 'priceList[0]["price"]', 0);
-    const btu = get(product, 'priceList[0]["btu"]', "");
+    const price = get(product, 'priceDisplayList[0]["price"]', 0);
+    const btu = get(product, 'priceDisplayList[0]["btu"]', "");
     let classNameProduct = "product border";
     if (mode === 'list') {
       classNameProduct = classNameProduct + ' list';
@@ -54,7 +54,7 @@ class ProductCard extends React.Component {
                 <h2 className="name mb-0 h5">{product.name}</h2>
                 <div className={(price === 0) ? 'd-none' : 'price pt-2'} >
                   ฿ {price}
-                  <span style={{ fontSize: '16px' }} className="badge badge-light font-weight-light border ml-1">({btu} BTU)</span>
+                  <span style={{ fontSize: '16px' }} className="badge badge-light font-weight-light border ml-2">({btu} BTU)</span>
 
                 </div>
                 <div className={(product['old-price'] === '') ? 'd-none' : 'old-price h6'}>฿ {product["old-price"]}</div>
@@ -63,11 +63,21 @@ class ProductCard extends React.Component {
                   {product.description}
                 </p>
                 <div className="">
-                  <FontAwesomeIcon className="h5 mb-0 pr-2" icon={faFacebookMessenger} />
+                  <FontAwesomeIcon size="1x" className="mb-0 pr-2" icon={faFacebookMessenger} />
                   <a href="#f" className="text-primary btn btn-link">สอบถาม/สั่งซื้อสินค้า </a>
                 </div>
-                <button onClick={this.toggleShowPrices} className="btn btn-info btn-sm">ดูราคาสินค้าเพิ่มเติม</button>
-                {isShowPrices ? <table className="table">
+                <div className="row">
+                  <div className="col-6 col-md-8">
+                    <button onClick={this.toggleShowPrices} className="btn btn-outline-info btn-sm">ดูราคาสินค้าเพิ่มเติม</button>
+
+                  </div>
+                  <div className="col-6 col-md-3">
+                    <span className="btn-catalog text-dark">
+                      <a href={product.catalogLink} target="_blank">Catalog</a>
+                    </span>
+                  </div>
+                </div>
+                {isShowPrices ? <div className="table-responsive mt-2"><table className="table table-sm h6">
                   <thead>
                     <tr>
                       <td>ราคา</td>
@@ -75,21 +85,19 @@ class ProductCard extends React.Component {
                     </tr>
                   </thead>
                   <tbody>
-                    {product.priceList.map(item => {
+                    {product.priceDisplayList.map(item => {
                       return (
                         <tr key={item.btu}>
-                          <td>{item.price}</td>
+                          <td>{item.price} บาท</td>
                           <td>{item.btu}</td>
                         </tr>
                       )
                     })}
                   </tbody>
-                </table> : null}
+                </table></div> : null}
 
 
-                <span className="btn-catalog text-dark">
-                  <a href={product.catalogLink} target="_blank">Catalog</a>
-                </span>
+
               </div>
             </div>
           </div>
