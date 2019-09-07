@@ -67,6 +67,11 @@ export default class Footer extends React.Component {
                 111 Lasalle 28, Sukumvit 105 Rd, Bangna, Bangna, Bangkok 10260
                 Tel 02-749-1230-2 AUTO, 081-889-6696
                 </p>
+              <div>
+                ---
+                iframe facebook
+                ---
+                </div>
             </div>
           </div>
         </div>

@@ -1,13 +1,15 @@
 import React from "react";
-import Layout from "../components/layouts/Layout";
+import Layout from "../../components/layouts/Layout";
+import service1 from '../../assets/images/service/service1.jpg'
+import service2 from '../../assets/images/service/service2.jpg'
 
 export default function service() {
   return (
     <Layout>
-      <div className="container">
+      <div className="container py-5">
         <div className="row">
-          <div className="col">
-            <h2>บริการของเรา</h2>
+          <div className="col-12 col-md-7">
+            <h1>บริการของเรา</h1>
             <p>
               ด้วยอุดมการณ์ร่วมกันอันมุ่งมั่น ที่จะพัฒนาระบบงาน และการบริการ ด้วยความซื่อสัตย์ ความรับผิดชอบ และความจริงใจ อันเป็นจุดมุ่งหมาย หลักของบริษัทฯ จึงทำให้บริษัท ฯ มีวันนี้ และพร้อมจะทำงานให้ท่าน ในขอบเขตงานดังต่อไปนี้
             </p>
@@ -38,6 +40,16 @@ export default function service() {
               บริษัท เอ พี อี เซอร์วิส จำกัด มีความเพรียบพร้อมเป็นอย่างมาก โดยมีทีมวิศวกรและช่างที่ชำนาญ การเป็นอย่างมากอีกทั้งยังมีเครื่องมือที่ทันสมัยเข้ามาช่วยในการทำงาน สำหรับการวัดและปรับปริมาณ น้ำที่ต้องมีการปรับก็เพื่อช่วยในการประหยัดทรัพยากรน้ำ เนื่องจากเครื่องปรับอากาศขนาดเล็กและ ขนาดใหญ่ตามที่มีการผลิตออกมาจำหน่ายจะระบุปริมาณน้ำที่เครื่องปรับอากาศเหล่านั้นต้องการมาด้วย จึงทำให้สามารถปรับปริมาณน้ำได้ง่ายและเร็วมากขึ้น
       การปรับปริมาณน้ำเพื่อให้น้ำไหลผ่านเข้าไปตามจำนวนที่ AHU. และ Fan Coil ต้องการเพราะว่า ถึงมีน้ำผ่านเข้าไปมากก็ไม่ทำให้ประสิทธิภาพการทำความเย็นเพิ่มขึ้น ดังนั้นจึงควรจะมีการปรับปริมาณ น้ำให้เท่ากับที่เครื่องปรับอากาศต้องการจะดีกว่า เป็นการประหยัดพลังงานด้วย
         </p>
+          </div>
+          <div className="col-12 col-md-5">
+            <img className="img-fluid" src={service1} alt="apeservice" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-md-5">
+            <img className="img-fluid" src={service2} alt="apeservice" />
+          </div>
+          <div className="col-12 col-md-7 pt-1 pt-md-5">
             <p>
               การวัดความเร็วลม และปรับปริมาณลม บริษัท เอ พี อี เซอร์วิส จำกัด มีความชำนาญงานในการทำ งานเกี่ยวกับงานท่อส่งลม ไม่ว่าจะเป็นท่อส่งลมเย็น ท่อลมระบายอากาศ โดยมีทีมวิศวกรที่มีความสามารถ ในการออกแบบและทีมช่างที่ชำนาญการเฉพาะทาง
         </p>
@@ -50,7 +62,6 @@ export default function service() {
           </div>
         </div>
       </div>
-
     </Layout>
   );
 }
