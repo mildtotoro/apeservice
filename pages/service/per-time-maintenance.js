@@ -1,24 +1,24 @@
 import React from "react";
 import Layout from "../../components/layouts/Layout";
 
-export default function perTimeMaintanance() {
+export default function perTimeMaintenance() {
   return (
     <Layout>
       <div className="container">
         <div className="row">
           <div className="col">
-            <h2>รายละเอียดการล้างเครื่องปรับอากาศต่อครั้ง</h2>
+            <h2 className="pt-5">รายละเอียดการล้างเครื่องปรับอากาศต่อครั้ง</h2>
             <div>
               <div>
                 <p>เมื่อท่านให้ความไว้วางใจ  จะส่งช่างที่มือฝีมือและคุณภาพเข้าไปทำการตรวจเช็คและทำประวัติของเครื่องปรับอากาศทุกเครื่อง  ตรวจสอบพร้อมเสนอและสรุปผลงาน  ผลการตรวจเช็คสภาพของเครื่องปรับอากาศให้ทราบทุกครั้ง  โดยมีรายละเอียดแต่ละครั้งดังต่อไปนี้</p>
-                <h2>(ล้างใหญ่) คอลย์เย็น  (Evaporator)</h2>
+                <h4 className="pt-3">(ล้างใหญ่) คอลย์เย็น  (Evaporator)</h4>
                 <ol>
                   <li>ล้างทำความสะอาดฟิลคอลย์ (Evaporator)  ด้วยปั้มน้ำแรงดันสูง</li>
                   <li>ดูดและเป่าทำความสะอาดระบบท่อน้ำทิ้งด้วย (Blower)</li>
                   <li>ล้างทำความสะอาดแผ่นกรองอากาศ  (Filter)</li>
                   <li>ตรวจเช็คจุดต่อสายไฟภายในระบบ  และยึดสกรูสายไฟให้แน่นหนา</li>
                 </ol>
-                <h2>(ล้างใหญ่) คอลย์ร้อน  (Condensing  Unit)</h2>
+                <h4 className="pt-3">(ล้างใหญ่) คอลย์ร้อน  (Condensing  Unit)</h4>
                 <ol>
                   <li>ล้างทำความสะอาดแผงครีบคอนเดนซิ่งด้วยปั้มน้ำแรงดันสูงและ Blower </li>
                   <li>ตรวจสอบการทำงานของมอเตอร์ระบายความร้อน</li>
