@@ -10,6 +10,7 @@ import partner3 from "../assets/images/partners/uniaire.jpg";
 import commercialAir from "../assets/images/Commercial.jpg";
 import logo from "../assets/images/ape-service-logo.png";
 import article1 from "../assets/images/home-service.jpg";
+import leftArticle from "../assets/images/left-article.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faFacebookSqare } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
@@ -123,7 +124,7 @@ function Home() {
               <Col lg="6">
                 <Row>
                   <Col lg="5">
-                    <img className="img-fluid border p-3 mb-4" src={article1} alt="ape service" />
+                    <img className="img-fluid border p-2 mb-4" src={leftArticle} alt="ape service" />
                   </Col>
                   <Col lg="7">
                     <a className="text-dark font-weight-light" href="#r"><span className="h5">&bull; </span>  รายละเอียดการล้างเครื่องปรับอากาศต่อครั้ง</a><br />
@@ -148,7 +149,7 @@ function Home() {
               <Col lg="6">
                 <Row>
                   <Col lg="5">
-                    <img className="img-fluid border p-3 mb-4" src={article1} alt="ape service" />
+                    <img className="img-fluid border p-2 mb-4" src={article1} alt="ape service" />
                   </Col>
                   <Col lg="7">
                     <a className="text-dark font-weight-light" href="#r"><span className="h5">&bull; </span>การเลือกขนาดของเครื่องปรับอากาศให้เหมาะสมกับพื้นที่ใช้งาน</a><br />
