@@ -41,7 +41,7 @@ export default class Footer extends React.Component {
                   <a className="text-light" href="https://www.daikin.co.th" target="_blank">แอร์ Daikin</a>
                 </li>
                 <li>
-                  <a className="text-light" href="uni-aire.com/th" target="_blank">แอร์ Uni-aire</a>
+                  <a className="text-light" href="https://uni-aire.com/th" target="_blank">แอร์ Uni-aire</a>
                 </li>
               </ul>
             </div>
