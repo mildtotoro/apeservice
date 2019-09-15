@@ -12,7 +12,7 @@ import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { faFacebookMessenger } from "@fortawesome/free-brands-svg-icons";
 import Link from 'next/link';
 
-import logo from "../../assets/images/ape-service-logo.png";
+import logo from "../../assets/images/ape-service-logo-red.png";
 
 export default class MenuBar extends React.Component {
   render() {

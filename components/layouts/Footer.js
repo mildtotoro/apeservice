@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/ape-service-logo.png";
+import logo from "../../assets/images/ape-service-logo-red.png";
 
 export default class Footer extends React.Component {
   render() {
