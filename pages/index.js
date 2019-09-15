@@ -127,12 +127,22 @@ function Home() {
                     <img className="img-fluid border p-2 mb-4" src={leftArticle} alt="ape service" />
                   </Col>
                   <Col lg="7">
-                    <a className="text-dark font-weight-light" href="#r"><span className="h5">&bull; </span>  รายละเอียดการล้างเครื่องปรับอากาศต่อครั้ง</a><br />
-                    <a className="text-dark font-weight-light" href="#r"><span className="h5">&bull; </span> รายละเอียดการล้างเครื่องปรับอากาศรายปี</a><br />
-                    <a className="text-dark font-weight-light" href="#e">
-                      <span className="h5">&bull; </span> อัตราค่าบริการล้างเครื่องปรับอากาศ ต่อครั้ง/รายปี
-                    </a><br />
-                    <a className="text-dark font-weight-light" href="#e"><span className="h5">&bull; </span> อัตราค่าบริการติดตั้งเครื่องปรับอากาศ</a>
+                    <Link href="/service/per-time-maintenance">
+                      <a className="text-dark font-weight-light"><span className="h5">&bull; </span>  รายละเอียดการล้างเครื่องปรับอากาศต่อครั้ง</a>
+                    </Link><br />
+                    <Link href="/service/yearly-maintenance">
+                      <a className="text-dark font-weight-light">
+                        <span className="h5">&bull; </span> รายละเอียดการล้างเครื่องปรับอากาศรายปี
+                        </a>
+                    </Link><br />
+                    <Link href="/service/service-rates">
+                      <a className="text-dark font-weight-light">
+                        <span className="h5">&bull; </span> อัตราค่าบริการล้างเครื่องปรับอากาศ ต่อครั้ง/รายปี
+                    </a>
+                    </Link><br />
+                    <Link href="/service/setup-rates">
+                      <a className="text-dark font-weight-light"><span className="h5">&bull; </span> อัตราค่าบริการติดตั้งเครื่องปรับอากาศ</a>
+                    </Link>
                   </Col>
                 </Row>
               </Col>

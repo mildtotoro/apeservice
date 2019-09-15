@@ -38,14 +38,16 @@ export default class MenuBar extends React.Component {
         </div>
 
         <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home">
-            <img
-              alt="ape service"
-              src={logo}
-              // width="30"
-              height="38"
-              className="d-inline-block align-top"
-            />
+          <Navbar.Brand>
+            <Link href="/">
+              <img
+                alt="ape service"
+                src={logo}
+                // width="30"
+                height="38"
+                className="d-inline-block align-top"
+              />
+            </Link>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

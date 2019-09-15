@@ -8,7 +8,7 @@ export default function setupRates() {
         <div className="row">
           <div className="col">
             <div>
-              <h2 className="py-5">อัตราค่าบริการติดตั้งเครื่องปรับอากาศ</h2>
+              <h2 className="pb-3">อัตราค่าบริการติดตั้งเครื่องปรับอากาศ</h2>
               <h4>อัตราค่าบริการติดตั้งเครื่องปรับอากาศ แบบติดผนัง (Wall Type)</h4>
               <div className="table-responsive pb-2 pb-md-3 pb-lg-5">
                 <table className="table">
