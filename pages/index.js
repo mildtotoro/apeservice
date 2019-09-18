@@ -163,13 +163,13 @@ function Home() {
                   </Col>
                   <Col lg="7">
                     <Link href="/articles/how-to-choose-btu">
-                      <a className="text-dark font-weight-light" href="#r"><span className="h5">&bull; </span>การเลือกขนาดของเครื่องปรับอากาศให้เหมาะสมกับพื้นที่ใช้งาน</a>
+                      <a className="text-dark font-weight-light"><span className="h5">&bull; </span>การเลือกขนาดของเครื่องปรับอากาศให้เหมาะสมกับพื้นที่ใช้งาน</a>
                     </Link><br />
                     <Link href="/articles/energy-saving">
-                      <a className="text-dark font-weight-light" href="#r"><span className="h5">&bull; </span>เคล็ดลับการประหยัดพลังงาน</a>
+                      <a className="text-dark font-weight-light"><span className="h5">&bull; </span>เคล็ดลับการประหยัดพลังงาน</a>
                     </Link><br />
                     <Link href="/articles/air-conditioner-problams-solutions">
-                      <a className="text-dark font-weight-light" href="#e">
+                      <a className="text-dark font-weight-light">
                         <span className="h5">&bull; </span>อาการขัดข้องของเครื่องปรับอากาศและวิธีแก้ไข</a>
                     </Link><br />
                   {/* <Link href="/articles/energy-saving">
