@@ -172,14 +172,13 @@ function Home() {
                       <a className="text-dark font-weight-light">
                         <span className="h5">&bull; </span>อาการขัดข้องของเครื่องปรับอากาศและวิธีแก้ไข</a>
                     </Link><br />
-                  {/* <Link href="/articles/energy-saving">
-                    
-                    <a className="text-dark font-weight-light" href="#e">
-                      <span className="h5">&bull; </span>การปรับอากาศ แนวคิด และ มูลเหตุ</a>
-                  </Link><br /> */}
-                  {/* <Link href="/articles/energy-saving">
-                    <a className="text-dark font-weight-light" href="#e"><span className="h5">&bull; </span>ความรู้เบื้องต้นเกี่ยวกับเครื่องปรับอากาศ</a>
-                    </Link> */}
+                    <Link href="/articles/air-conditioner-knowledge-2">
+                      <a className="text-dark font-weight-light" href="#e">
+                        <span className="h5">&bull; </span>การปรับอากาศ แนวคิด และ มูลเหตุ</a>
+                    </Link><br />
+                    <Link href="/articles/air-conditioner-knowledge">
+                      <a className="text-dark font-weight-light"><span className="h5">&bull; </span>ความรู้เบื้องต้นเกี่ยวกับเครื่องปรับอากาศ</a>
+                    </Link>
                   </Col>
                 </Row>
               </Col>

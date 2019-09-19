@@ -4,14 +4,14 @@ import Layout from "../../components/layouts/Layout";
 export default function serviceRate() {
   return (
     <Layout>
-      <div className="container">
+      <div className="container py-5">
         <div className="row">
           <div className="col">
-            <h2 className="pt-5">อัตราค่าบริการล้างเครื่องปรับอากาศ</h2>
+            <h2 className="pb-4 text-primary">อัตราค่าบริการล้างเครื่องปรับอากาศ</h2>
             <div>
               <p className="pb-5">การล้างเครื่องปรับอากาศจะสามารถช่วยให้เครื่องปรับอากาศทำงานได้อย่างเต็มประสิทธิภาพมากขึ้น และสามารถประหยัดค่าไฟฟ้า  เนื่องจากการล้างทำความสะอาดเครื่องปรับอากาศทั้งที่ส่วนที่อยู่ภายนอก (Compressor Unit)  และส่วนที่อยู่ภายในห้อง (Fan Coil Unit)  ทำให้แผงระบายความร้อน และระบายความเย็นสะอาดไม่มีสิ่งสกปรกอุดตัน  ทำให้ Compressor  ทำงานน้อยลง  เมื่อ Compressor ทำงานน้อยลง  จึงทำให้สามารถประหยัดค่าไฟได้ และสามารถทำให้เครื่องปรับอากาศสามารถทำความเย็นได้ดีขึ้นอีกด้วย</p>
 
-              <h4>อัตราค่าบริการล้างเครื่องปรับอากาศ แบบติดผนัง(Wall Type)</h4>
+              <h4 className="text-primary">อัตราค่าบริการล้างเครื่องปรับอากาศ แบบติดผนัง(Wall Type)</h4>
               <div className="table-responsive pb-2 pb-md-3 pb-lg-5">
                 <table className="table">
                   <thead className="bg-info text-light">
@@ -34,7 +34,7 @@ export default function serviceRate() {
                 </table>
               </div>
 
-              <h4>อัตราค่าบริการล้างเครื่องปรับอากาศ แบบแขวนใต้ฝา (Ceiling Type)</h4>
+              <h4 className="text-primary">อัตราค่าบริการล้างเครื่องปรับอากาศ แบบแขวนใต้ฝา (Ceiling Type)</h4>
               <div className="table-responsive pb-2 pb-md-3 pb-lg-5">
                 <table className="table">
                   <thead className="bg-info text-light">
@@ -71,7 +71,7 @@ export default function serviceRate() {
                 </table>
               </div>
 
-              <h4>อัตราค่าบริการล้างเครื่องปรับอากาศ แบบเปลือย (Conceal Type)</h4>
+              <h4 className="text-primary">อัตราค่าบริการล้างเครื่องปรับอากาศ แบบเปลือย (Conceal Type)</h4>
               <div className="table-responsive pb-2 pb-md-3 pb-lg-5">
                 <table className="table">
                   <thead className="bg-info text-light">
@@ -106,8 +106,8 @@ export default function serviceRate() {
                 </table>
               </div>
 
-              <h4>อัตราค่าบริการล้างเครื่องปรับอากาศ ขนาดใหญ่ (AHU.)</h4>
-              <div className="table-responsive pb-2 pb-md-3 pb-lg-5">
+              <h4 className="text-primary">อัตราค่าบริการล้างเครื่องปรับอากาศ ขนาดใหญ่ (AHU.)</h4>
+              <div className="table-responsive pb-2 pb-md-3 pb-lg-3">
                 <table className="table">
                   <thead className="bg-info text-light">
                     <tr>
@@ -159,10 +159,10 @@ export default function serviceRate() {
                 </table>
               </div>
 
-              <p>
+              <p className="text-info pb-3">
                 * หมายเหตุ บริการรายปี บริการ 6 ครั้ง ล้างใหญ่ 2 ครั้ง ล้างย่อย 4 ครั้ง
-</p>
-              <p>&nbsp;</p>
+              </p>
+
               {/* <ul className="catlist">
                 <li><a href="service-and-maintenance/maintenance-detail">รายละเอียดการล้างเครื่องปรับอากาศต่อครั้ง</a></li>
                 <li><a href="service-and-maintenance/yearly-maintenance-detail">รายละเอียดการล้างเครื่องปรับอากาศรายปี</a></li>

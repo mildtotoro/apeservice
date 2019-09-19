@@ -9,12 +9,12 @@ export default function airConditionerProblamsSolutions() {
       <div className="container py-5">
         <div className="row">
           <div className="col">
-            <h2 className="pb-3">อาการขัดข้องของเครื่องปรับอากาศและวิธีแก้ไข</h2>
+            <h2 className="pb-4 text-primary">อาการขัดข้องของเครื่องปรับอากาศและวิธีแก้ไข</h2>
             <div>
               <Accordion defaultActiveKey="0">
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="0">
-                    <h4 className="mb-0">เครื่องปรับอากาศไม่เย็น</h4>
+                    <h5 className="mb-0">เครื่องปรับอากาศไม่เย็น</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="0">
                     <Card.Body>
@@ -54,7 +54,7 @@ export default function airConditionerProblamsSolutions() {
                 </Card>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="1">
-                    <h4 className="mb-0">เครื่องปรับอากาศไม่ทำงาน</h4>
+                    <h5 className="mb-0">เครื่องปรับอากาศไม่ทำงาน</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="1">
                     <Card.Body>
@@ -90,7 +90,7 @@ export default function airConditionerProblamsSolutions() {
                 </Card>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="2">
-                    <h4 className="mb-0">พัดลมและคอมเพรสเซอร์ไม่ทำงาน</h4>
+                    <h5 className="mb-0">พัดลมและคอมเพรสเซอร์ไม่ทำงาน</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="2">
                     <Card.Body>
@@ -123,7 +123,7 @@ export default function airConditionerProblamsSolutions() {
                 </Card>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="3">
-                    <h4 className="mb-0">น้ำรั่ว</h4>
+                    <h5 className="mb-0">น้ำรั่ว</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="3">
                     <Card.Body>
@@ -156,7 +156,7 @@ export default function airConditionerProblamsSolutions() {
                 </Card>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="4">
-                    <h4 className="mb-0">น้ำหยดจากเครื่องเป่าลมเย็น</h4>
+                    <h5 className="mb-0">น้ำหยดจากเครื่องเป่าลมเย็น</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="4">
                     <Card.Body>
@@ -187,7 +187,7 @@ export default function airConditionerProblamsSolutions() {
                 </Card>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="5">
-                    <h4 className="mb-0">น้ำแข็งเกาะ  หรือตัวเครื่องมีการหมุนเวียนอากาศน้อย</h4>
+                    <h5 className="mb-0">น้ำแข็งเกาะ  หรือตัวเครื่องมีการหมุนเวียนอากาศน้อย</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="5">
                     <Card.Body>
@@ -218,7 +218,7 @@ export default function airConditionerProblamsSolutions() {
                 </Card>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="5">
-                    <h4 className="mb-0">ระบบของเครื่องทำงาน แต่อากาศไม่เย็น</h4>
+                    <h5 className="mb-0">ระบบของเครื่องทำงาน แต่อากาศไม่เย็น</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="5">
                     <Card.Body>
@@ -241,7 +241,7 @@ export default function airConditionerProblamsSolutions() {
                 </Card>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="5">
-                    <h4>พัดลมทำงานเสียงดัง</h4>
+                    <h5>พัดลมทำงานเสียงดัง</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="5">
                     <Card.Body>

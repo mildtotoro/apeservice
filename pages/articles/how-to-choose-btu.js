@@ -7,7 +7,7 @@ export default function howToChooseBTU() {
       <div className="container">
         <div className="row">
           <div className="col">
-            <h2 className="pt-5">การเลือกขนาดของเครื่องปรับอากาศให้เหมาะสมกับพื้นที่ใช้งาน</h2>
+            <h2 className="pt-5 py-3 text-primary">การเลือกขนาดของเครื่องปรับอากาศให้เหมาะสมกับพื้นที่ใช้งาน</h2>
             <div>
               <div className="table-responsive">
                 <table className="table">
