@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../../components/layouts/Layout";
 import service1 from '../../assets/images/service/service1.jpg'
 import service2 from '../../assets/images/service/service2.jpg'
+import service3 from '../../assets/images/service/service3.jpg'
 
 export default function service() {
   return (
@@ -43,11 +44,12 @@ export default function service() {
           </div>
           <div className="col-12 col-md-4">
             <img className="img-fluid" src={service1} alt="apeservice" />
+            <img className="img-fluid pt-1" src={service3} alt="apeservice" />
           </div>
         </div>
         <div className="row">
           <div className="col-12 col-md-5">
-            <img className="img-fluid" src={service2} alt="apeservice" />
+            <img className="img-fluid pt-1" src={service2} alt="apeservice" />
           </div>
           <div className="col-12 col-md-7 pt-1 pt-md-5">
             <p>

@@ -11,6 +11,7 @@ import client8 from "../../assets/images/client/client-8.jpg";
 import client9 from "../../assets/images/client/client-9.jpg";
 import client10 from "../../assets/images/client/client-10.jpg";
 import client11 from "../../assets/images/client/client-11.jpg";
+import client12 from "../../assets/images/client/client-12.jpg";
 
 export default class Client extends Component {
   render() {
@@ -31,40 +32,40 @@ export default class Client extends Component {
       <div>
         <Slider {...settings}>
           <div className="px-3">
-            <img className="border img-fluid" src={client1} alt="" />
+            <img className="border img-fluid" src={client1} alt="ape service รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่" />
           </div>
           <div className="px-3">
-            <img className="border img-fluid" src={client2} alt="" />
+            <img className="border img-fluid" src={client2} alt="ape service รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่" />
           </div>
           <div className="px-3">
-            <img className="border img-fluid" src={client3} alt="" />
+            <img className="border img-fluid" src={client3} alt="ape service รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่" />
           </div>
           <div className="px-3">
-            <img className="border img-fluid" src={client4} alt="" />
+            <img className="border img-fluid" src={client4} alt="ape service รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่" />
           </div>
           <div className="px-3">
-            <img className="border img-fluid" src={client5} alt="" />
+            <img className="border img-fluid" src={client5} alt="ape service รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่" />
           </div>
           <div className="px-3">
-            <img className="border img-fluid" src={client6} alt="" />
+            <img className="border img-fluid" src={client6} alt="ape service รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่" />
           </div>
           <div className="px-3">
-            <img className="border img-fluid" src={client7} alt="" />
+            <img className="border img-fluid" src={client7} alt="ape service รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่" />
           </div>
           <div className="px-3">
-            <img className="border img-fluid" src={client8} alt="" />
+            <img className="border img-fluid" src={client8} alt="ape service รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่" />
           </div>
           <div className="px-3">
-            <img className="border img-fluid" src={client9} alt="" />
+            <img className="border img-fluid" src={client9} alt="ape service รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่" />
           </div>
           <div className="px-3">
-            <img className="border img-fluid" src={client10} alt="" />
+            <img className="border img-fluid" src={client10} alt="ape service รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่" />
           </div>
           <div className="px-3">
-            <img className="border img-fluid" src={client11} alt="" />
+            <img className="border img-fluid" src={client11} alt="ape service รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่" />
           </div>
           <div className="px-3">
-            <img className="border img-fluid" src={client11} alt="" />
+            <img className="border img-fluid" src={client12} alt="ape service รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่" />
           </div>
         </Slider>
       </div>
