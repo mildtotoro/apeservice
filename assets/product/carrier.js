@@ -1,7 +1,9 @@
+// ตัวไฟล์รูปจะอยู่ที่ folder static > assets > products > carrier
+
 export default [
   {
     brand: 'carrier',
-    name: '42TVAA ชื่อยาวมากหดเ้ยาวมากหดเ้ยาวมากหดเ้ยาวมากหดเ้ยาวมากหดเ้ยาวมากหดเ้ยาวมากหดเ้ยาวมากหดเ้ยาวมากหดเ้',
+    name: '42TVAA',
     description: 'รุ่นติดผนัง ใหม่ล่าสุด ประหยัดไฟเบอร์ 5 9,200 - 21,000 BTU/H',
     priceList: [
       {
@@ -21,7 +23,6 @@ export default [
         price: 0
       }
     ],
-    // price: '14,300',
     'old-price': '1',
     catalogLink: 'http://www.carrier.co.th/products/carrier/dl/42TVAA_catalog.pdf',
     imageName: '42tvaa.jpg'
@@ -56,7 +57,6 @@ export default [
         price: 0
       }
     ],
-    // price: '10,000',
     'old-price': '',
     catalogLink: 'http://www.carrier.co.th/products/carrier/dl/42TEVGB_catalog.pdf',
     imageName: '42tevgb.jpg'
@@ -87,7 +87,6 @@ export default [
         price: 0
       }
     ],
-    // price: '11,600',
     'old-price': '',
     catalogLink: 'http://www.carrier.co.th/products/carrier/dl/42TVGS_catalog.pdf',
     imageName: '42tvgs.jpg'
@@ -117,7 +116,6 @@ export default [
         price: 0
       }
     ],
-    // price: '9,500',
     'old-price': '',
     catalogLink: 'http://www.carrier.co.th/products/carrier/dl/42TSGS_catalog.pdf',
     imageName: '42tsgs.jpg'
@@ -144,7 +142,6 @@ export default [
         price: 0
       }
     ],
-    // price: '9,000',
     'old-price': '',
     catalogLink: 'http://www.carrier.co.th/products/carrier/dl/42AAF_catalog.pdf',
     imageName: '42aaf.jpg'
@@ -171,7 +168,6 @@ export default [
         price: 0
       }
     ],
-    // price: '',
     'old-price': '',
     catalogLink: 'http://www.carrier.co.th/products/carrier/dl/42HFE_catalog.pdf',
     imageName: '42hfe.jpg'

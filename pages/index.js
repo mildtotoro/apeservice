@@ -113,10 +113,10 @@ function Home() {
         <div className="py-5">
           <Container>
             <Row>
-              <Col>
+              <Col xs="12" lg="6">
                 <h2 className="pb-4">บริการและการซ่อมบำรุง</h2>
               </Col>
-              <Col>
+              <Col xs="12" lg="6">
                 <h2 className="pb-4 d-none d-lg-block">บทความ</h2>
               </Col>
             </Row>

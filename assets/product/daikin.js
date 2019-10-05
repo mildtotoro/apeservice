@@ -1,3 +1,5 @@
+// ตัวไฟล์รูปจะอยู่ที่ folder static > assets > products > diakin
+
 export default [
   {
     brand: 'daikin',
@@ -6,7 +8,7 @@ export default [
     priceList: [
       {
         btu: 8599,
-        price: 0
+        price: 123
       },
       {
         btu: 11900,
@@ -29,8 +31,7 @@ export default [
         price: 0
       }
     ],
-    price: '14,300',
-    'old-price': '',
+    'old-price': '9,999',
     catalogLink: 'https://www.daikin.co.th/wp-content/uploads/2019/01/super_smile_2_.pdf',
     imageName: 'daikin-1.jpg'
   },
@@ -44,7 +45,6 @@ export default [
         price: 0
       },
     ],
-    price: '',
     'old-price': '',
     catalogLink: 'https://www.daikin.co.th/wp-content/uploads/2019/01/smile_inverter_2_.pdf',
     imageName: 'daikin-2.jpg'

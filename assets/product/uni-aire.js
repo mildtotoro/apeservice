@@ -1,3 +1,5 @@
+// ตัวไฟล์รูปจะอยู่ที่ folder static > assets > products > uni-aire
+
 export default [
   {
     brand: 'uni-aire',

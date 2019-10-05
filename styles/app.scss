@@ -106,12 +106,12 @@
   }
   @include media-breakpoint-up(lg) {
     &.list {
-      height: 270px;
+      height: 300px;
       &.auto-height {
         height: auto;
       }
       .product-image-wrapper {
-        height: 270px;
+        height: 300px;
       }
     }
     .name {
