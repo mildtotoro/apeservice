@@ -25,7 +25,7 @@ function Home() {
           <Row>
             <Col lg="10" className="mx-auto text-center py-5">
               <h2>บริษัท เอ พี อี เซอร์วิส จำกัด</h2>
-              <p>
+              <p className="font-weight-light" style={{ fontSize: '17px' }}>
                 จากประสบการณ์ในงานระบบปรับอากาศ ระบบระบายอากาศกว่า 23ปี
                 บริษัทฯมีความเชี่ยวชาญด้านแอร์บ้านและแอร์เชิงพาณิชย์
                 เพื่อรองรับกับการพัฒนาประสิทธิภาพ ของงานระบบ, การประหยัดพลังงาน
@@ -36,12 +36,12 @@ function Home() {
           <Row>
             <Col>
               <h3 className="text-center">เครื่องปรับอากาศสำหรับที่พักอาศัย</h3>
-              <h6>
+              <h5 className="font-weight-light" style={{ fontSize: '15px' }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt tempore iste, quibusdam architecto quas cum dolorum
                 animi ex expedita, non officia voluptatibus, error ratione
                 numquam eum ipsam placeat id aut.
-              </h6>
+              </h5>
               <div className="text-center">
                 <Link href="/products">
                   <a>
@@ -57,14 +57,14 @@ function Home() {
             </Col>
             <Col>
               <h3 className="text-center">เครื่องปรับอากาศเชิงพาณิชย์</h3>
-              <h6>
+              <h5 className="font-weight-light" style={{ fontSize: '15px' }}>
                 จัดหาจำหน่ายติดตั้งเครื่องปรับอากาศทุกชนิด, ทุกยี่ห้อ
                 จำหน่ายอะไหล่-น้ำยาแอร์ทุกชนิด, ทุกยี่ห้อ จัดหาและติดตั้งระบบ
                 AIR CONDITION CHILLER SYSTEM ติดตั้งระบบจ่ายลมเย็น, ท่อส่งลม ,
                 ท่อส่งน้ำ และ PUMP ติดตั้งระบบดูดระบายควัน/กลิ่น และ BLOWER
                 ติดตั้งท่อ DUCT WORK ทุกชนิด ระบบหัวกระจายน้ำดับเพลิง SPRINKLER
                 งานหุ้มฉนวน และ งานหุ้ม JACKET
-              </h6>
+              </h5>
               <div className="text-center">
                 <a href="#1">
                   <img
