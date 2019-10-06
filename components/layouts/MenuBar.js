@@ -68,7 +68,7 @@ export default class MenuBar extends React.Component {
               <Link href="/products">
                 <a className="nav-link">สินค้า</a>
               </Link>
-              <Link href="/show-case">
+              <Link href="/showcase">
                 <a className="nav-link">ตัวอย่างผลงาน</a>
               </Link>
               <Link href="/about-us">
