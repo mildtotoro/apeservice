@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/layouts/Layout";
 import ShowCase from "../../components/layouts/ShowCase";
 
-class Fajeeb extends React.Component {
+class CPPetrochem extends React.Component {
     render() {
         return (
             <Layout>
@@ -34,4 +34,4 @@ class Fajeeb extends React.Component {
     }
 }
 
-export default Fajeeb;
+export default CPPetrochem;

@@ -1,4 +1,6 @@
 import React from "react";
+import Masonry from 'react-masonry-component';
+
 import Layout from "../../components/layouts/Layout";
 import showcase1 from '../../assets/images/showcase/toy-r-us.jpg';
 import showcase2 from '../../assets/images/showcase/packpro.jpg';
@@ -12,9 +14,38 @@ import showcase9 from '../../assets/images/showcase/engai.jpg';
 import showcase10 from '../../assets/images/showcase/fajeeb.jpg';
 import showcase11 from '../../assets/images/showcase/ns-electronic.jpg';
 import showcase12 from '../../assets/images/showcase/cp-petrochem.jpg';
+import showcase13 from '../../assets/images/showcase/thai-nissei.jpg';
+import showcase14 from '../../assets/images/showcase/ariyagroup.jpg';
+import showcase15 from '../../assets/images/showcase/efd-introduction.jpg';
+import showcase16 from '../../assets/images/showcase/tfm.jpg';
+
 import Link from 'next/link';
 
 const showcaseList = [
+  {
+    linkName: 'thai-nissei',
+    image: showcase13,
+    title: 'บริษัท ไทยนิสเซ่คอนเวอร์ติ้ง จำกัด',
+    subtitle: 'งานติดตั้งระบบท่อลม (Duct Work)'
+  },
+  {
+    linkName: 'ariyagroup',
+    image: showcase14,
+    title: 'บริษัท อริยะอีควิปเม้นท์ จำกัด',
+    subtitle: 'งานติดตั้ง Water Cooled Chiller'
+  },
+  {
+    linkName: 'efd-introduction',
+    image: showcase15,
+    title: 'EFD INDUCTION Co.,Ltd.',
+    subtitle: 'งานติดตั้งระบบปรับอากาศ VRF TOSHIBA'
+  },
+  {
+    linkName: 'TFM',
+    image: showcase16,
+    title: 'บริษัท อุตสาหกรรมแป้งข้าวสาลีไทย จำกัด',
+    subtitle: 'งานติดตั้งระบบ ท่อส่งน้ำดับเพลิง และหัวจ่ายน้ำ Roof Manifold'
+  },
   {
     linkName: 'toy-r-us',
     image: showcase1,
@@ -89,6 +120,13 @@ const showcaseList = [
   },
 ]
 
+const masonryOptions = {
+  transitionDuration: 0
+};
+
+const imagesLoadedOptions = { background: '.my-bg-image-el' }
+
+
 export default function showCase() {
 
   return (
@@ -97,29 +135,37 @@ export default function showCase() {
         <div className="row">
           <div className="col">
             <h2 className="py-4">ตัวอย่างผลงาน</h2>
-            <div className="row">
-              {showcaseList.map((project) => {
-                return [
-                  <div className="col-12 col-md-6 col-lg-4">
-                    <Link href={`/showcase/${project.linkName}`}>
-                      <a className="card mb-3">
-                        <img src={project.image} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                          <h5 className="card-title"> {project.title}</h5>
-                          <p className="card-text">{project.subtitle}</p>
-                          <div className="card-text text-right">
+            <div className="">
+              <Masonry
+                className={'row'} // default ''
+                // elementType={'ul'} // default 'div'
+                options={masonryOptions} // default {}
+                disableImagesLoaded={false} // default false
+                updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+              // imagesLoadedOptions={} // default {}
+              >
+                {showcaseList.map((project) => {
+                  return [
+                    <div key={project.title} className="col-12 col-md-6 col-lg-4">
+                      <Link href={`/showcase/${project.linkName}`}>
+                        <a className="card mb-3">
+                          <img src={project.image} className="card-img-top" alt="..." />
+                          <div className="card-body">
+                            <h5 className="card-title"> {project.title}</h5>
+                            <p className="card-text">{project.subtitle}</p>
+                            <div className="card-text text-right">
+                            </div>
                           </div>
-                        </div>
-                      </a>
-                    </Link>
-                  </div>
-                ]
-              })}
+                        </a>
+                      </Link>
+                    </div>
+                  ]
+                })}
+              </Masonry>
             </div>
           </div>
         </div>
       </div>
-
     </Layout>
   );
 }

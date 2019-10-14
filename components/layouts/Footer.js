@@ -71,7 +71,7 @@ export default class Footer extends React.Component {
               <iframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2Fpg%2F%25E0%25B9%2581%25E0%25B8%25AD%25E0%25B8%25A3%25E0%25B9%258C%25E0%25B8%259A%25E0%25B9%2589%25E0%25B8%25B2%25E0%25B8%2599-%25E0%25B9%2581%25E0%25B8%25AD%25E0%25B8%25A3%25E0%25B9%258C%25E0%25B9%2581%25E0%25B8%2582%25E0%25B8%25A7%25E0%25B8%2599-%25E0%25B9%2581%25E0%25B8%25AD%25E0%25B8%25A3%25E0%25B9%258C%25E0%25B8%259C%25E0%25B8%2599%25E0%25B8%25B1%25E0%25B8%2587-%25E0%25B8%25A3%25E0%25B8%25B2%25E0%25B8%2584%25E0%25B8%25B2%25E0%25B8%25AA%25E0%25B9%2588%25E0%25B8%2587%25E0%25B8%2596%25E0%25B8%25B9%25E0%25B8%2581%25E0%25B9%2586%25E0%25B9%2581%25E0%25B8%25AD%25E0%25B8%25A3%25E0%25B9%258C%25E0%25B9%2582%25E0%25B8%25A3%25E0%25B8%2587%25E0%25B8%2587%25E0%25B8%25B2%25E0%25B8%2599-%25E0%25B8%2597%25E0%25B8%25B8%25E0%25B8%2581%25E0%25B8%25A3%25E0%25B8%25B0%25E0%25B8%259A%25E0%25B8%259A-2223337804401717%2Fabout%2F%3Fref%3Dpage_internal&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=2484471585118599"
                 width="340" height="400"
-                style={{ border: 'none', overflow: 'hidden' }} scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
+                style={{ border: 'none', overflow: 'hidden' }} scrolling="no" frameBorder="0" allowtransparency="true" allow="encrypted-media">
 
               </iframe>
             </div>
