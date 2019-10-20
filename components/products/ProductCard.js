@@ -33,7 +33,7 @@ class ProductCard extends React.Component {
         classNameProduct = classNameProduct + ' auto-height';
       }
     }
-    console.log({ isShowPrices })
+
     return (
       <div className={(mode === 'list') ? 'col-12 col-lg-6 mt-4' : 'col-12 col-md-6 col-lg-4 mt-4'}>
         <div className={classNameProduct}>

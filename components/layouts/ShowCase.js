@@ -69,7 +69,6 @@ class ShowCase extends React.Component {
             const imgPath = assetPrefix + `/static/assets/showcase/${projectFolderName}/` + i + '.jpg';
             gallery.push(imgPath)
         }
-        console.log({ gallery })
         return (
             <div>
                 <div className="container">
@@ -92,17 +91,13 @@ class ShowCase extends React.Component {
                     <div className="row">
                         <div className="col-12 mb-5 px-0">
                             {gallery.length > 0 ?
-
                                 <Slider {...settings}>
-                                    {/* <div> */}
                                     {gallery.map(img => {
 
                                         return <div key={"showcase" + img} className="border text-center">
                                             <img style={{ maxHeight: '300px' }} key={img} src={img} alt={projectFolderName} />
                                         </div>
                                     })}
-                                    {/* </div> */}
-
                                 </Slider>
                                 : null}
                         </div>

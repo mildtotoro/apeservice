@@ -96,9 +96,6 @@ class Products extends React.Component {
         products = state.products.filter((product) => {
           return product.brand === state.filter.brand;
         });
-
-        console.log({ products });
-
       }
 
       if (value === 'all') {
@@ -146,15 +143,10 @@ class Products extends React.Component {
     this.setState({
       mode
     });
-
-
-    console.log({ mode })
   }
 
   render() {
     const { showProducts, filter: { brand }, mode } = this.state;
-    console.log(this.state)
-
     return (
       <Layout>
         <Container className="page-product">
