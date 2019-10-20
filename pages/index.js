@@ -34,15 +34,21 @@ function Home() {
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col xs={12} md={6}>
               <h3 className="text-center">เครื่องปรับอากาศสำหรับที่พักอาศัย</h3>
               <h5 className="font-weight-light" style={{ fontSize: '15px' }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt tempore iste, quibusdam architecto quas cum dolorum
-                animi ex expedita, non officia voluptatibus, error ratione
-                numquam eum ipsam placeat id aut.
+                - เทคโนโลยี Design ใหม่<br />
+                - เย็นเร็วทันใจ<br />
+                - เงียบ ประหยัดพลังงาน<br />
+                - เพิ่มอากาศบริสุทธิ์<br />
+                - เป็นมิตรกับสิ่งแวดล้อม<br />
+                - นวัฒกรรมใหม่ R-32<br />
+                - เทคโนโลยีสารเคลือบคอยล์เย็น Aqua Resin ปิดกันฝุ่น<br />
+                - Inverter เย็นสะอาดและประหยัดพลังงาน<br />
+                - ระบบทำความสะอาดแผงคอยล์เย็นอัตโนมัติ<br />
               </h5>
               <div className="text-center">
+                <div className="d-none d-md-block" style={{ height: '111px' }}></div>
                 <Link href="/products">
                   <a>
                     <img className="img-fluid" src={homeAir} alt="apeservice homeair" />
@@ -55,15 +61,25 @@ function Home() {
                 </Link>
               </div>
             </Col>
-            <Col>
+            <Col xs={12} md={6}>
               <h3 className="text-center">เครื่องปรับอากาศเชิงพาณิชย์</h3>
               <h5 className="font-weight-light" style={{ fontSize: '15px' }}>
-                จัดหาจำหน่ายติดตั้งเครื่องปรับอากาศทุกชนิด, ทุกยี่ห้อ
-                จำหน่ายอะไหล่-น้ำยาแอร์ทุกชนิด, ทุกยี่ห้อ จัดหาและติดตั้งระบบ
-                AIR CONDITION CHILLER SYSTEM ติดตั้งระบบจ่ายลมเย็น, ท่อส่งลม ,
-                ท่อส่งน้ำ และ PUMP ติดตั้งระบบดูดระบายควัน/กลิ่น และ BLOWER
-                ติดตั้งท่อ DUCT WORK ทุกชนิด ระบบหัวกระจายน้ำดับเพลิง SPRINKLER
-                งานหุ้มฉนวน และ งานหุ้ม JACKET
+                - แบบแขวนใต้ฝ้า ติดตั้งในพื้นที่ที่มีเพดานสูง พื้นที่แคบ กระจายความเย็นทั่วถึง<br />
+                - แบบฝังในฝ้า ความเย็นกระจายรอบทิศทาง ปรับเข้ากับพื้นที่ติดตั้งได้ทุกพื้นที่<br />
+                - แบบตู้ตั้ง ติดตั้งได้หลากหลาย พื้นที่ตรงกลาง หรือชิดกำแพง<br />
+                - แบบต่อท่อลม ซ่อนคอล์เย็นไว้ในฝ้า ส่งลมเย็นผ่านท่อลม ที่ต่อไปยังพื้นที่ต่าง ๆ
+                ออกแบบเพื่อใช้งานในพื้นที่จำกัด<br />
+                - เครื่องปรับอากาศแบบต่อท่อลมระบายความร้อนด้วยอากาศ<br />
+                - เครื่องปรับอากาศแบบต่อท่อลมระบายความร้อนด้วยน้ำ<br />
+                - เครื่องระบายความร้อนด้วยอากาศ<br />
+                - เครื่องระบายความร้อนด้วยน้ำ<br />
+                - เครื่องทำน้ำเย็นระบายความร้อนด้วยอากาศ<br />
+                - เครื่องทำน้ำเย็นระบายความร้อนด้วยน้ำ<br />
+                - ระบบ VRV , VRF<br />
+                - ใช้ในอุตสาหกรรม<br />
+                - ประหยังพลังงาน ประหยัดพื้นที่<br />
+                - รูปลักษณ์สวยงาม<br />
+                - ทนทาน ดูแลรักษาง่าย<br />
               </h5>
               <div className="text-center">
                 <a href="#1">

@@ -18,6 +18,7 @@ import showcase13 from '../../assets/images/showcase/thai-nissei.jpg';
 import showcase14 from '../../assets/images/showcase/ariyagroup.jpg';
 import showcase15 from '../../assets/images/showcase/efd-introduction.jpg';
 import showcase16 from '../../assets/images/showcase/tfm.jpg';
+import showcase17 from '../../assets/images/showcase/sell-equipment.jpg';
 
 import Link from 'next/link';
 
@@ -51,6 +52,12 @@ const showcaseList = [
     image: showcase1,
     title: 'ร้านทอยส์ อาร์ อัส คาร์ฟูพระราม4',
     subtitle: 'ระบบปรับอากาศ และ ระบบท่าส่งลมเย็น'
+  },
+  {
+    linkName: 'sell-equipmint',
+    image: showcase17,
+    title: 'งานขายอุปกรณ์ อะไหล่แอร์',
+    subtitle: ''
   },
   {
     linkName: 'packpro',
