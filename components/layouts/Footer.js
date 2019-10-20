@@ -1,5 +1,9 @@
 import React from "react";
 import logo from "../../assets/images/ape-service-logo-red.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookMessenger } from "@fortawesome/free-brands-svg-icons";
+import Link from 'next/link';
 
 export default class Footer extends React.Component {
   render() {
@@ -54,8 +58,7 @@ export default class Footer extends React.Component {
               <div>เปลี่ยนอะไหล่แอร์</div>
             </div>
             <div className="col-12 col-md-6 col-lg-3">
-              facebook shopee lazada
-                <h5>ที่ตั้ง</h5>
+              <h5 className="pt-4 p-md-0">ที่ตั้ง</h5>
               <p>
                 เปิดบริการ วันจันทร์-อาทิตย์ เวลา 8:30 - 18.00น. <br />
                 เบอร์ร้าน 02-749-1230-2 หรือ เบอร์โทรศัพท์ 081-889-6696
@@ -66,8 +69,24 @@ export default class Footer extends React.Component {
                 111 Lasalle 28, Sukumvit 105 Rd, Bangna, Bangna, Bangkok 10260
                 Tel 02-749-1230-2 AUTO, 081-889-6696
                 </p>
+              <div>
+                <a className="text-light" style={{ height: '23px', overflow: "hidden" }} target="_blank" href="https://www.facebook.com/pg/%E0%B9%81%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99-%E0%B9%81%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%81%E0%B8%82%E0%B8%A7%E0%B8%99-%E0%B9%81%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%9C%E0%B8%99%E0%B8%B1%E0%B8%87-%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B9%86%E0%B9%81%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99-%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A-2223337804401717/about/?ref=page_internal">
+                  <FontAwesomeIcon size="2x" icon={faFacebookSquare} />
+                </a>
+                <span className="px-1"></span>
+                <a className="text-light" style={{ height: '23px', overflow: "hidden" }} href="https://www.messenger.com/t/2223337804401717" target="_blank">
+                  <FontAwesomeIcon size="2x" icon={faFacebookMessenger} />
+                </a>
+                {/* <span className="px-2 d-none d-lg-inline-block">|</span> */}
+                {/* <div className="d-block d-lg-none"></div> */}
+
+                {/* <a className="text-light " target="_blank" href="#shopee">Shopee</a>
+                <span className="px-1"></span>
+                <a className="text-light " target="_blank" href="#3">Lazada</a>
+                <span className="px-1"></span> */}
+              </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-3">
+            <div className="col-12 col-md-6 col-lg-3 pt-4 p-md-0">
               <iframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2Fpg%2F%25E0%25B9%2581%25E0%25B8%25AD%25E0%25B8%25A3%25E0%25B9%258C%25E0%25B8%259A%25E0%25B9%2589%25E0%25B8%25B2%25E0%25B8%2599-%25E0%25B9%2581%25E0%25B8%25AD%25E0%25B8%25A3%25E0%25B9%258C%25E0%25B9%2581%25E0%25B8%2582%25E0%25B8%25A7%25E0%25B8%2599-%25E0%25B9%2581%25E0%25B8%25AD%25E0%25B8%25A3%25E0%25B9%258C%25E0%25B8%259C%25E0%25B8%2599%25E0%25B8%25B1%25E0%25B8%2587-%25E0%25B8%25A3%25E0%25B8%25B2%25E0%25B8%2584%25E0%25B8%25B2%25E0%25B8%25AA%25E0%25B9%2588%25E0%25B8%2587%25E0%25B8%2596%25E0%25B8%25B9%25E0%25B8%2581%25E0%25B9%2586%25E0%25B9%2581%25E0%25B8%25AD%25E0%25B8%25A3%25E0%25B9%258C%25E0%25B9%2582%25E0%25B8%25A3%25E0%25B8%2587%25E0%25B8%2587%25E0%25B8%25B2%25E0%25B8%2599-%25E0%25B8%2597%25E0%25B8%25B8%25E0%25B8%2581%25E0%25B8%25A3%25E0%25B8%25B0%25E0%25B8%259A%25E0%25B8%259A-2223337804401717%2Fabout%2F%3Fref%3Dpage_internal&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=2484471585118599"
                 width="340" height="400"

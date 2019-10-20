@@ -42,7 +42,7 @@ const showcaseList = [
     subtitle: 'งานติดตั้งระบบปรับอากาศ VRF TOSHIBA'
   },
   {
-    linkName: 'TFM',
+    linkName: 'tfm',
     image: showcase16,
     title: 'บริษัท อุตสาหกรรมแป้งข้าวสาลีไทย จำกัด',
     subtitle: 'งานติดตั้งระบบ ท่อส่งน้ำดับเพลิง และหัวจ่ายน้ำ Roof Manifold'
@@ -131,8 +131,7 @@ const masonryOptions = {
   transitionDuration: 0
 };
 
-const imagesLoadedOptions = { background: '.my-bg-image-el' }
-
+// const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 export default function showCase() {
 

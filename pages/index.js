@@ -62,7 +62,7 @@ function Home() {
               </div>
             </Col>
             <Col xs={12} md={6}>
-              <h3 className="text-center">เครื่องปรับอากาศเชิงพาณิชย์</h3>
+              <h3 className="text-center pt-5 p-md-0">เครื่องปรับอากาศเชิงพาณิชย์</h3>
               <h5 className="font-weight-light" style={{ fontSize: '15px' }}>
                 - แบบแขวนใต้ฝ้า ติดตั้งในพื้นที่ที่มีเพดานสูง พื้นที่แคบ กระจายความเย็นทั่วถึง<br />
                 - แบบฝังในฝ้า ความเย็นกระจายรอบทิศทาง ปรับเข้ากับพื้นที่ติดตั้งได้ทุกพื้นที่<br />
@@ -92,9 +92,9 @@ function Home() {
                 </a>
               </div>
               <div className="text-right">
-                <a className="text-right" href="#a">
-                  ดูเพิ่มเติม >
-                </a>
+                <Link href="/showcase">
+                  <a className="text-right">ดูเพิ่มเติม ></a>
+                </Link>
               </div>
             </Col>
           </Row>
