@@ -77,9 +77,9 @@ export default class MenuBar extends React.Component {
               <Link href="/contact-us">
                 <a className="nav-link">ติดต่อเรา</a>
               </Link>
-              <Link href="/how-to-order">
+              {/* <Link href="/how-to-order">
                 <a className="nav-link">วิธีการชำระเงิน</a>
-              </Link>
+              </Link> */}
               {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
