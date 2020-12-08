@@ -63,7 +63,7 @@ export default class MenuBar extends React.Component {
                 target="_blank"
                 href="http://www.daikin.co.th/service-btu-calculation/"
               >
-                คำนวน BTU
+                คำนวณ BTU
               </Nav.Link>
               <Link href="/products">
                 <a className="nav-link">สินค้า</a>

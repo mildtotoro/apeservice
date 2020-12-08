@@ -44,7 +44,7 @@ export default function airConditionerProblamsSolutions() {
                             <td><ol>
                               <li>ตรวจสอบท่อลมกลับว่า  รั่วและดูดลมร้อนเข้ามาหรือไม่</li>
                               <li>ตรวจสอบในช่องฝ้าหรือในจั่ว ว่ามีรอยรั่วให้ลมร้อนเข้าได้หรือไม่ ในกรณีที่ดูดลมกลับเหนือฝ้า</li>
-                              <li>ตรวจสอบ  fresh  air  เข้ามามากเกินไปไม่</li>
+                              <li>ตรวจสอบ  fresh  air  เข้ามามากเกินไปหรือไม่</li>
                             </ol></td>
                           </tr>
                         </tbody>
@@ -259,7 +259,7 @@ export default function airConditionerProblamsSolutions() {
                           </tr>
                           <tr>
                             <td>2.  เกิดจากพัดลมหรือมอเตอร์พัดลมหลวม</td>
-                            <td>2.  ขันน๊อตพัดลมให้แน่น</td>
+                            <td>2.  ขันนอตพัดลมให้แน่น</td>
                           </tr>
                           <tr>
                             <td>3.  ใบพัดลมบิดงอหรือไม่สมดุลกัน</td>

@@ -29,7 +29,7 @@ export default class Slider extends React.Component {
             </div>
             <div className="d-block d-md-none">
               <h5 className="mb-0">APE Service</h5>
-              <p className="mb-0">รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่ <br />โทร 02-749-1230-2</p>
+              <p className="mb-0">รับออกแบบ ติดตั้ง จำหน่าย<br />เครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่ <br />โทร 02-749-1230-2</p>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -47,7 +47,7 @@ export default class Slider extends React.Component {
             </div>
             <div className="d-block d-md-none">
               <h5 className="mb-0">APE Service</h5>
-              <p className="mb-0">รับออกแบบ ติดตั้ง จำหน่ายเครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่ <br />โทร 02-749-1230-2</p>
+              <p className="mb-0">รับออกแบบ ติดตั้ง จำหน่าย<br />เครื่องปรับอากาศ บริการล้าง-ซ่อมแอร์ ขายน้ำยาแอร์และอะไหล่ <br />โทร 02-749-1230-2</p>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
