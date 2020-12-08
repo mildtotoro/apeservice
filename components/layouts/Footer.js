@@ -88,13 +88,11 @@ export default class Footer extends React.Component {
                 <a className="text-light" style={{ height: '23px', overflow: "hidden" }} href="https://www.messenger.com/t/2223337804401717" target="_blank">
                   <FontAwesomeIcon size="2x" icon={faFacebookMessenger} />
                 </a>
-                {/* <span className="px-2 d-none d-lg-inline-block">|</span> */}
-                {/* <div className="d-block d-lg-none"></div> */}
-
-                {/* <a className="text-light " target="_blank" href="#shopee">Shopee</a>
                 <span className="px-1"></span>
-                <a className="text-light " target="_blank" href="#3">Lazada</a>
-                <span className="px-1"></span> */}
+                <a className="text-light " target="_blank" href="https://shopee.co.th/ape.service">Shopee</a>
+                <span className="px-1"></span>
+                <a className="text-light " target="_blank" href="https://s.lazada.co.th/s.XHXyO">Lazada</a>
+                <span className="px-1"></span>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-3 pt-4 p-md-0">

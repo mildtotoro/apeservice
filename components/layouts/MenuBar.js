@@ -29,11 +29,10 @@ export default class MenuBar extends React.Component {
           </a>
           <span className="px-2 d-none d-lg-inline-block">|</span>
           <div className="d-block d-lg-none"></div>
-
-          {/* <a className="text-light " target="_blank" href="#shopee">Shopee</a>
+          <a className="text-light " target="_blank" href="https://shopee.co.th/ape.service">Shopee</a>
           <span className="px-2">|</span>
-          <a className="text-light " target="_blank" href="#3">Lazada</a>
-          <span className="px-2">|</span> */}
+          <a className="text-light " target="_blank" href="https://s.lazada.co.th/s.XHXyO">Lazada</a>
+          <span className="px-2">|</span>
           <a className="text-light" href="tel: 02-749-1230-2">Tel. 02-749-1230-2 </a>
         </div>
 
