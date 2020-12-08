@@ -13,6 +13,9 @@ module.exports = withSass(
         '/products': { page: '/products' },
       };
     },
+    publicRuntimeConfig: {
+      assetPrefix,
+    },
     assetPrefix,
     webpack: function (config) {
       config.module.rules.push({
@@ -27,5 +30,5 @@ module.exports = withSass(
       });
       return config;
     }
-  })
-);
+  }),
+)
