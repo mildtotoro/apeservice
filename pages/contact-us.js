@@ -44,12 +44,12 @@ export default function contactUs() {
               <a className="mr-3" style={{ height: '23px', overflow: "hidden" }} href="https://www.messenger.com/t/2223337804401717" target="_blank">
                 <FontAwesomeIcon size="2x" icon={faFacebookMessenger} />
               </a>
-              {/* <a className="mr-3" style={{ height: '23px', overflow: "hidden" }} href="https://www.messenger.com/t/2223337804401717" target="_blank">
+              <a className="mr-3" style={{ height: '23px', overflow: "hidden" }} href="https://shopee.co.th/ape.service" target="_blank">
                 Shopee
               </a>
-              <a className="mr-3" style={{ height: '23px', overflow: "hidden" }} href="https://www.messenger.com/t/2223337804401717" target="_blank">
+              <a className="mr-3" style={{ height: '23px', overflow: "hidden" }} href="https://s.lazada.co.th/s.XHXyO" target="_blank">
                 Lazada
-              </a> */}
+              </a>
             </p>
           </div>
           <div className="col-12 col-md-7">
