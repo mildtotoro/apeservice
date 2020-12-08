@@ -51,7 +51,7 @@ const showcaseList = [
     linkName: 'toy-r-us',
     image: showcase1,
     title: 'ร้านทอยส์ อาร์ อัส คาร์ฟูพระราม4',
-    subtitle: 'ระบบปรับอากาศ และ ระบบท่าส่งลมเย็น'
+    subtitle: 'ระบบปรับอากาศ และ ระบบท่อส่งลมเย็น'
   },
   {
     linkName: 'sell-equipmint',
