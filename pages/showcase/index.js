@@ -116,7 +116,7 @@ const showcaseList = [
   {
     linkName: 'ns-electronic',
     image: showcase11,
-    title: 'บริษัท เอ็น เอส อีเลคโทรนิค จำกัด',
+    title: 'บริษัท เอ็น เอส อิเล็กทรอนิกส์ จำกัด',
     subtitle: 'ระบบปรับอากาศ และ แสงสว่าง สำหรับห้อง Clean Room'
   },
   {

@@ -9,7 +9,7 @@ class NsElectronic extends React.Component {
                 <ShowCase
                     projectFolderName="ns-electronic"
                     imgLength="5"
-                    projectName="บริษัท เอ็น เอส อีเลคโทรนิค จำกัด"
+                    projectName="บริษัท เอ็น เอส อิเล็กทรอนิกส์ จำกัด"
                     subtitle="ติดตั้งระบบปรับอากาศ และ แสงสว่าง สำหรับห้อง Clean Room"
                     content=""
                 >
